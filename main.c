@@ -23,8 +23,9 @@ int main()
         filename[0] = 'a';
         filename[1] = i + '0';
         fp = fopen(filename, "r");
+	printf("Attempt: %d\n", i);
         if(fp == NULL){
-            printf("Couldn't open file\n");
+            printf("Couldn't open file: %s\n", filename);
             return 1;
         }
         anEntry* entryTable = malloc(sizeof(anEntry));
