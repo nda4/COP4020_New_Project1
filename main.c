@@ -13,31 +13,29 @@ int main()
     }
     // printf("%s", myTable[0].charValue);
     // printf("%s", myTable[1].charValue);
-    
+    char filename[20];
+
+    printf("Please Enter Filename: ");
+
+    scanf("%s", filename);
 
     FILE * fp;
-    int i = 1;
-    char filename[2];
+    printf("%s\n\n", filename);
 
-    while(i < 9){
-        filename[0] = 'a';
-        filename[1] = i + '0';
-        fp = fopen(filename, "r");
-	printf("Attempt: %d\n", i);
-        if(fp == NULL){
-            printf("Couldn't open file: %s\n", filename);
-            return 1;
-        }
-        anEntry* entryTable = malloc(sizeof(anEntry));
-        lookAhead = lexan(fp);
-        // match(BEGIN);
-        
+    fp = fopen(filename, "r");
 
-        fclose(fp);
-        free(entryTable);
-        i++;
+	// printf("Attempt:");
+    if(fp == NULL){
+        printf("Couldn't open file: %s\n", filename);
+        return 1;
     }
+    anEntry* entryTable = malloc(sizeof(anEntry));
+    lookAhead = lexan(fp);
+    // match(BEGIN);
     
+
+    fclose(fp);
+    free(entryTable);
 
     
     return 0;
