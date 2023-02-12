@@ -1,7 +1,7 @@
 #ifndef LEX
 #define LEX
 
-
+#include "Definitions"
 #include <stdlib.h>
 #include <stdio.h>
 #include <ctype.h>
@@ -15,8 +15,7 @@
 
 
 int lexan(FILE *fp);
-int lookup(char* arr);
-
+int lookup(char* arr); 
 extern int lineNo;
 
 typedef struct{

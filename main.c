@@ -5,34 +5,55 @@
 */
 #include "pars.h"
 
+FILE * fp;
+int lineNo;
+
 int main()
 {   
-    char* preDefinitions[2] = {"begin", "end"};
-    for(int i = 0; i < 2; i++){
+    
+    
+    char* preDefinitions[10] = {"begin", "end", ";", "+", "-", "=", "*", "/", "(", ")"};
+    for(int i = 0; i < 10; i++){
         myTable[i].charValue = preDefinitions[i];
     }
-    // printf("%s", myTable[0].charValue);
-    // printf("%s", myTable[1].charValue);
+    myTable[0].type = BEGIN;
+    myTable[1].type = END;
+    myTable[2].type = SEMICOLON;
+    myTable[3].type = PLUS;
+    myTable[4].type = MINUS;
+    myTable[5].type = EQUALS;
+    myTable[6].type = TIMES;
+    myTable[7].type = DIVIDE;
+    myTable[8].type = OPENQ;
+    myTable[9].type = CLOSEQ;
+    
+    lineNo = 1; 
     char filename[20];
-
-    printf("Please Enter Filename: ");
+    printf("Please Enter Filename: (automatic)\n");
 
     scanf("%s", filename);
 
-    FILE * fp;
-    printf("%s\n\n", filename);
-
     fp = fopen(filename, "r");
 
-	// printf("Attempt:");
     if(fp == NULL){
         printf("Couldn't open file: %s\n", filename);
         return 1;
     }
     anEntry* entryTable = malloc(sizeof(anEntry));
     lookAhead = lexan(fp);
+    if(lookAhead == BEGIN){
+        // printf("%d", lookAhead);
+        lookAhead = lexan(fp);
+        assignStmt();
+       }
+    else{
+        fclose(fp);
+        free(entryTable);
+        error(BEGIN);
+    }
+
     // match(BEGIN);
-    
+    printf("PROGRAM LEGAL: SUCCESS\n");
 
     fclose(fp);
     free(entryTable);

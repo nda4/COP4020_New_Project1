@@ -5,3 +5,13 @@
 #define DONE  500
 #define NOT_FOUND -1
 #define NOT_STARTED 0
+#define SEMICOLON 399
+#define PLUS 350
+#define MINUS 350
+#define TIMES 351
+#define DIVIDE 351
+#define EQUALS 352
+#define OPENQ 201
+#define CLOSEQ 202
+#define DOUBLEUNDER -2
+#define ENDUNDER -3

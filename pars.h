@@ -6,13 +6,15 @@
 
 
 
-void match(int t, FILE * fp);
+void match(int t);
 void assignStmt();
-void express();
+void expression();
 void term();
 void factor();
-void fail();
+void error(int t);
 extern int lookAhead;
+extern int lineNo;
+extern FILE *fp;
 
 
 
