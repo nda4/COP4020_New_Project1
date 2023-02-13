@@ -5,6 +5,7 @@ int lookAhead = 0;
 
 void error(int t){
     printf("Error found on line %d\n", lineNo);
+    // printf("ENDED HERE: %d\n", t);
     if(t == ID){
         printf("Expected Identifier\n");
     }
@@ -20,10 +21,10 @@ void error(int t){
     else if(t == SEMICOLON){
         printf("Expected Semicolon\n");
     }
-    else if(t == PLUS || MINUS){
+    else if(t == PLUS || t == MINUS){
         printf("Expected Operator\n");
     }
-    else if(t == TIMES || DIVIDE){
+    else if(t == TIMES || t == DIVIDE){
         printf("Expected Operator\n");
     }
     else if(t == EQUALS){
@@ -38,6 +39,10 @@ void error(int t){
     else if(t == ENDUNDER){
         printf("Identifiers Must Not Start or End With Underscore\n");
     }
+    else if(t == OPENQ){
+        printf("Expected Opening Quote\n");
+    }
+    printf("\n");
     exit(1);
 }
 
@@ -56,7 +61,7 @@ void factor(){
         match(ID);
     else if(lookAhead == NUM)
         match(NUM);
-    else if(lookAhead = OPENQ){
+    else if(lookAhead == OPENQ){
         match(OPENQ);
         expression();
         match(CLOSEQ);
@@ -76,6 +81,7 @@ void term(){
 void expression(){
     term();
     while(lookAhead == PLUS || lookAhead == MINUS){
+        // printf("AExpression");
         match(lookAhead);
         term();
     }
@@ -86,13 +92,13 @@ void assignStmt(){
     // printf("IDMATCHED\n");
 
     if(lookAhead != EQUALS){
-        printf("%d", lookAhead);
+        // printf("%d", lookAhead);
         error(EQUALS);
     }
     else{
         match(lookAhead);
         // printf("EXPRESSION");
         expression();
+        match(SEMICOLON);
     }
-    match(SEMICOLON);
 }

@@ -32,12 +32,30 @@ int lexan(FILE *fp){
         idLexemeID = 0;
 
         nextChar = fgetc(fp);
-        // printf("\nVALUE: %c\n", nextChar);
+        // printf("%c", nextChar);
         // printf("TEST");
         if(nextChar == '\n'){
             // printf("NEWLINE");
             lineNo++;
         }
+        else if(nextChar == ';'){
+            // printf("SEMICOLON");
+            return SEMICOLON;
+        }
+        else if(nextChar == '+')
+            return PLUS;
+        else if(nextChar == '-')
+            return MINUS;
+        else if(nextChar == '*')
+            return TIMES;
+        else if(nextChar == '/')
+            return DIVIDE;
+        else if(nextChar == '(')
+            return OPENQ;
+        else if(nextChar == ')')
+            return CLOSEQ;
+        else if(nextChar == '=')
+            return EQUALS;
         else if(nextChar == ' ' || nextChar == '\t'){
             // printf("SPACE");
         }
@@ -70,6 +88,7 @@ int lexan(FILE *fp){
                 idLexeme[idLexemeID] = nextChar;
                 idLexemeID++;
                 nextChar = fgetc(fp);
+                // printf("%c", nextChar);
                 if(nextChar == '_' && uSwitch != 1)
                     uSwitch = 1;
                 else if(nextChar == '_' && uSwitch == 1)
@@ -77,12 +96,11 @@ int lexan(FILE *fp){
                 if((isalpha(nextChar) != 0 || nextChar != '_') && nextChar != '\n' && nextChar != ';' && nextChar != ' ')
                     uSwitch = 0;
             }while((isalpha(nextChar) != 0 || nextChar == '_') && nextChar != '\n' && nextChar != ' ' && nextChar != ';');
+            ungetc(nextChar, fp);
             if(uSwitch == 1){
-                // printf("ENDED HERE: %d\n", ENDUNDER);
                 error(ENDUNDER);
             }
             idLexeme[idLexemeID] = '\0';
-            ungetc(nextChar, fp);
             type = lookup(idLexeme);
             return type;
         }
@@ -90,24 +108,6 @@ int lexan(FILE *fp){
             // printf("EOF");
             return DONE;
         }
-        else if(nextChar == ';'){
-            // printf("SEMICOLON");
-            return SEMICOLON;
-        }
-        else if(nextChar == '+')
-            return PLUS;
-        else if(nextChar == '-')
-            return MINUS;
-        else if(nextChar == '*')
-            return TIMES;
-        else if(nextChar == '/')
-            return DIVIDE;
-        else if(nextChar == '(')
-            return OPENQ;
-        else if(nextChar == ')')
-            return CLOSEQ;
-        else if(nextChar == '=')
-            return EQUALS;
     }while(!feof(fp));
     return 0;
 }
@@ -115,12 +115,14 @@ int lexan(FILE *fp){
 int lookup(char* arr){
     int i = 0;
     do{
+        // printf("%s", arr);
         if(strcmp(arr, myTable[i].charValue) == 0){
             return myTable[i].type;
+            // printf("test");
         }
         i++;
     }while(myTable[i].type != 0);
-    myTable[i].charValue = ("%s\0", arr);
+    myTable[i].charValue = ("%s", arr);
     myTable[i].type = ID;
     // printf("TEST2");
     return ID;

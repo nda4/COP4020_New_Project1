@@ -29,7 +29,7 @@ int main()
     
     lineNo = 1; 
     char filename[20];
-    printf("Please Enter Filename: (automatic)\n");
+    printf("Please Enter Filename: (automatic)\n\n");
 
     scanf("%s", filename);
 
@@ -44,7 +44,9 @@ int main()
     if(lookAhead == BEGIN){
         // printf("%d", lookAhead);
         lookAhead = lexan(fp);
-        assignStmt();
+        while(!feof(fp) && lookAhead != END){
+            assignStmt();
+        }
        }
     else{
         fclose(fp);
@@ -53,7 +55,8 @@ int main()
     }
 
     // match(BEGIN);
-    printf("PROGRAM LEGAL: SUCCESS\n");
+    printf("PROGRAM LEGAL: SUCCESS\n\n");
+
 
     fclose(fp);
     free(entryTable);
