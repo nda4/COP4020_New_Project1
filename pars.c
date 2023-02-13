@@ -93,7 +93,7 @@ void assignStmt(){
         error(EQUALS);
     }
     else{
-        match(lookAhead);=
+        match(lookAhead);
         expression();
         match(SEMICOLON);
     }

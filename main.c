@@ -1,4 +1,17 @@
+//Noah Daniel Arwine
+//COP4020_Spring_2023
+//Project 1
+//Lexical Analyser and Parser
+
+
 #include "pars.h"
+
+
+
+/*
+    Naturally, main is used to run the program. It initilizes by hard defining 10 items to be kept in the identifier struct. I am unsure
+    if that will be needed for the second project.
+*/
 
 FILE * fp;
 int lineNo;

@@ -1,5 +1,17 @@
+//Noah Daniel Arwine
+//COP4020_Spring_2023
+//Project 1
+//Lexical Analyser and Parser
+
 #ifndef LEX
 #define LEX
+
+
+/*
+    lex provides the ability to iterate and identify the strings found in a file. It returns an int value taht represents
+    a type of string. If an Identifer is found, it adds it to a list for later use.
+*/
+
 
 #include "Definitions"
 #include <stdlib.h>
