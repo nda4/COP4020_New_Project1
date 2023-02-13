@@ -5,7 +5,6 @@ int lookAhead = 0;
 
 void error(int t){
     printf("Error found on line %d\n", lineNo);
-    // printf("ENDED HERE: %d\n", t);
     if(t == ID){
         printf("Expected Identifier\n");
     }
@@ -81,7 +80,6 @@ void term(){
 void expression(){
     term();
     while(lookAhead == PLUS || lookAhead == MINUS){
-        // printf("AExpression");
         match(lookAhead);
         term();
     }
@@ -89,15 +87,13 @@ void expression(){
 
 void assignStmt(){
     match(ID);
-    // printf("IDMATCHED\n");
+
 
     if(lookAhead != EQUALS){
-        // printf("%d", lookAhead);
         error(EQUALS);
     }
     else{
-        match(lookAhead);
-        // printf("EXPRESSION");
+        match(lookAhead);=
         expression();
         match(SEMICOLON);
     }

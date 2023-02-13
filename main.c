@@ -1,8 +1,3 @@
-/*
-    Main() was written specifically for the files provided by the project.
-    As such, it is hardcoded to not accept any other files except those
-    named by the project. Aka a1-a8.
-*/
 #include "pars.h"
 
 FILE * fp;
@@ -42,7 +37,6 @@ int main()
     anEntry* entryTable = malloc(sizeof(anEntry));
     lookAhead = lexan(fp);
     if(lookAhead == BEGIN){
-        // printf("%d", lookAhead);
         lookAhead = lexan(fp);
         while(!feof(fp) && lookAhead != END){
             assignStmt();

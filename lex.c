@@ -1,24 +1,14 @@
 #include "lex.h"
 #include "pars.h"
 
-// #define ID    300
-// #define NUM   301
-// #define BEGIN 400
-// #define END   401
-// #define DONE  500
-// #define NOT_FOUND -1
-
-
 
 #define nameLength 30
 anEntry myTable[TABLELENGTH / sizeof(anEntry)];
 
 
 int lexan(FILE *fp){
-    // struct entry entryTable[TABLELENGTH];
     int numLexeme[MAX];
     char idLexeme[MAX];
-    // lineNo++;
     int numLexemeID;
     int type;
 
@@ -27,19 +17,14 @@ int lexan(FILE *fp){
     
     do{
         int uSwitch = 0;
-        // printf("TEST");
         numLexemeID = 0;
         idLexemeID = 0;
 
         nextChar = fgetc(fp);
-        // printf("%c", nextChar);
-        // printf("TEST");
         if(nextChar == '\n'){
-            // printf("NEWLINE");
             lineNo++;
         }
         else if(nextChar == ';'){
-            // printf("SEMICOLON");
             return SEMICOLON;
         }
         else if(nextChar == '+')
@@ -57,38 +42,30 @@ int lexan(FILE *fp){
         else if(nextChar == '=')
             return EQUALS;
         else if(nextChar == ' ' || nextChar == '\t'){
-            // printf("SPACE");
         }
         else if(nextChar == '~'){
-            // printf("TILDA");
             do{
                 nextChar = fgetc(fp);
-                // printf("%c", nextChar);
             }while(nextChar != '\n');
             ungetc(nextChar, fp);
         }
         else if(isdigit(nextChar)){
-            // printf("DIGIT RUNNER");
             do{
                 numLexeme[numLexemeID]=nextChar;
                 numLexemeID++;
                 nextChar = fgetc(fp);
-                // printf("%c", nextChar);
             }while(isdigit(nextChar));
             numLexeme[numLexemeID] = '\0';
             ungetc(nextChar, fp); 
-            // printf("%c", nextChar);
             return NUM;
         }
         else if((isalpha(nextChar) != 0 || nextChar == '_') && nextChar != '\n' && nextChar != ';' && nextChar != ' '){
             if(nextChar == '_')
                 error(ENDUNDER);
-            // printf("ALPHA");
             do{
                 idLexeme[idLexemeID] = nextChar;
                 idLexemeID++;
                 nextChar = fgetc(fp);
-                // printf("%c", nextChar);
                 if(nextChar == '_' && uSwitch != 1)
                     uSwitch = 1;
                 else if(nextChar == '_' && uSwitch == 1)
@@ -105,7 +82,6 @@ int lexan(FILE *fp){
             return type;
         }
         else if (nextChar == EOF){
-            // printf("EOF");
             return DONE;
         }
     }while(!feof(fp));
@@ -115,19 +91,14 @@ int lexan(FILE *fp){
 int lookup(char* arr){
     int i = 0;
     do{
-        // printf("%s", arr);
         if(strcmp(arr, myTable[i].charValue) == 0){
             return myTable[i].type;
-            // printf("test");
         }
         i++;
     }while(myTable[i].type != 0);
     myTable[i].charValue = ("%s", arr);
     myTable[i].type = ID;
-    // printf("TEST2");
     return ID;
 }
-
-//The following is specifically the symbol table
 
 
