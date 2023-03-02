@@ -16,13 +16,17 @@
 FILE * fp;
 int lineNo;
 
+anEntry myTable[TABLELENGTH / sizeof(anEntry)];
+
 int main()
 {   
     
     
-    char* preDefinitions[10] = {"begin", "end", ";", "+", "-", "=", "*", "/", "(", ")"};
-    for(int i = 0; i < 10; i++){
+    char* preDefinitions[12] = {"begin", "end", ";", "+", "-", "=", "*", "/", "(", ")", "int", ","};
+    for(int i = 0; i < 13; i++){
         myTable[i].charValue = preDefinitions[i];
+        // printf("%s\n" , myTable[i].charValue);
+        // printf("%d\n" , myTable[i].type);
     }
     myTable[0].type = BEGIN;
     myTable[1].type = END;
@@ -34,12 +38,24 @@ int main()
     myTable[7].type = DIVIDE;
     myTable[8].type = OPENQ;
     myTable[9].type = CLOSEQ;
+    myTable[10].type = INT_VAL;
+    myTable[11].type = COMMA;
+    myTable[12].type = NOT_FOUND;
+
+    // for(int i = 0; i < 13; i++){
+    //     myTable[i].charValue = preDefinitions[i];
+    //     printf("%s\n" , myTable[i].charValue);
+    //     printf("%d\n" , myTable[i].type);
+    // }
+
+    // printf("TEST1\t%d", myTable[10].type);
     
     lineNo = 1; 
     char filename[20];
-    printf("Please Enter Filename: (automatic)\n\n");
+    printf("Please Enter Filename: (automatic)\n");
 
     scanf("%s", filename);
+    printf("\n");
 
     fp = fopen(filename, "r");
 

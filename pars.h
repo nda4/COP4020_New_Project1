@@ -18,13 +18,17 @@
 
 void match(int t);
 void assignStmt();
+int newLookup();
+void intMatch();
 void expression();
 void term();
 void factor();
 void error(int t);
 extern int lookAhead;
 extern int lineNo;
+extern int iValue;
 extern FILE *fp;
+// extern char* currentIDLexeme;
 
 
 

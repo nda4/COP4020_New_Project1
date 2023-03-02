@@ -15,3 +15,6 @@
 #define CLOSEQ 202
 #define DOUBLEUNDER -2
 #define ENDUNDER -3
+#define INT_VAL 10
+#define REDEF -5
+#define COMMA 360

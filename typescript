@@ -1,0 +1,7012 @@
+Script started on 2023-02-28 16:10:17-06:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="215" LINES="13"]
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ ./script.sh
+[?2004l
+FILE a1 Results:
+
+cc    -c -o main.o main.c
+Please Enter Filename: (automatic)
+
+Error found on line 2
+Identifiers Must Not Start or End With Underscore
+
+make: *** [Makefile:8: main] Error 1
+rm *.o main
+
+
+
+
+FILE a2 Results:
+
+cc    -c -o pars.o pars.c
+cc    -c -o lex.o lex.c
+cc    -c -o main.o main.c
+Please Enter Filename: (automatic)
+
+300 300 PROGRAM LEGAL: SUCCESS
+
+rm *.o main
+
+
+
+
+FILE a3 Results:
+
+cc    -c -o pars.o pars.c
+cc    -c -o lex.o lex.c
+cc    -c -o main.o main.c
+Please Enter Filename: (automatic)
+
+300 300 300 Syntax Error found on line 4
+Expected Closing Quote
+
+make: *** [Makefile:8: main] Error 1
+rm *.o main
+
+
+
+
+FILE a4 Results:
+
+cc    -c -o pars.o pars.c
+cc    -c -o lex.o lex.c
+cc    -c -o main.o main.c
+Please Enter Filename: (automatic)
+
+300 300 300 PROGRAM LEGAL: SUCCESS
+
+rm *.o main
+
+
+
+
+FILE a5 Results:
+
+cc    -c -o pars.o pars.c
+cc    -c -o lex.o lex.c
+cc    -c -o main.o main.c
+Please Enter Filename: (automatic)
+
+300 300 Error found on line 6
+Expected '='
+
+make: *** [Makefile:8: main] Error 1
+rm *.o main
+
+
+
+
+FILE a6 Results:
+
+cc    -c -o pars.o pars.c
+cc    -c -o lex.o lex.c
+cc    -c -o main.o main.c
+Please Enter Filename: (automatic)
+
+300 300 PROGRAM LEGAL: SUCCESS
+
+rm *.o main
+
+
+
+
+FILE a7 Results:
+
+cc    -c -o pars.o pars.c
+cc    -c -o lex.o lex.c
+cc    -c -o main.o main.c
+Please Enter Filename: (automatic)
+
+Error found on line 4
+Expected 'begin' Statement
+
+make: *** [Makefile:8: main] Error 1
+rm *.o main
+
+
+
+
+FILE a8 Results:
+
+cc    -c -o pars.o pars.c
+cc    -c -o lex.o lex.c
+cc    -c -o main.o main.c
+Please Enter Filename: (automatic)
+
+300 Syntax Error found on line 6
+Expected Semicolon
+
+make: *** [Makefile:8: main] Error 1
+rm *.o main
+
+
+
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ ./script.sh[1Pgit statuss[C[C[C[C[C[C[C[2Pt pushstatusvim main.cls[K[C[C=[K[K[Kmake
+[?2004lcc    -c -o pars.o pars.c
+cc    -c -o lex.o lex.c
+cc    -c -o main.o main.c
+Please Enter Filename: (automatic)
+a8
+
+300 Syntax Error found on line 6
+Expected Semicolon
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+[01m[Kpars.c:[m[K In function ‘[01m[KassignStmt[m[K’:
+[01m[Kpars.c:90:12:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Kprintf[m[K’ makes pointer from integer without a cast [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wint-conversion-Wint-conversion]8;;[m[K]
+   90 |     printf([01;35m[KlookAhead[m[K);
+      |            [01;35m[K^~~~~~~~~[m[K
+      |            [01;35m[K|[m[K
+      |            [01;35m[Kint[m[K
+In file included from [01m[Klex.h:18[m[K,
+                 from [01m[Kpars.h:10[m[K,
+                 from [01m[Kpars.c:1[m[K:
+[01m[K/usr/include/stdio.h:356:43:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kconst char * restrict[m[K’ but argument is of type ‘[01m[Kint[m[K’
+  356 | extern int printf ([01;36m[Kconst char *__restrict __format[m[K, ...);
+      |                    [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[01m[Kpars.c:90:5:[m[K [01;35m[Kwarning: [m[Kformat not a string literal and no format arguments [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-security-Wformat-security]8;;[m[K]
+   90 |     [01;35m[Kprintf[m[K(lookAhead);
+      |     [01;35m[K^~~~~~[m[K
+Please Enter Filename: (automatic)
+a^[[A
+
+Couldn't open file: a[A
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+Please Enter Filename: (automatic)
+a8
+
+352	Syntax Error found on line 6
+Expected Semicolon
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+Please Enter Filename: (automatic)
+a8
+
+352	300	300	300	300	300	300	300	300	300	300	300	300	300	Syntax Error found on line 6
+Expected Semicolon
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ /[K./scripts[K.sh
+[?2004l
+FILE a1 Results:
+
+cc    -c -o pars.o pars.c
+Please Enter Filename: (automatic)
+
+Error found on line 2
+Identifiers Must Not Start or End With Underscore
+
+make: *** [Makefile:8: main] Error 1
+rm *.o main
+
+
+
+
+FILE a2 Results:
+
+cc    -c -o pars.o pars.c
+cc    -c -o lex.o lex.c
+cc    -c -o main.o main.c
+Please Enter Filename: (automatic)
+
+300	300	300	300	300	300	301	301	PROGRAM LEGAL: SUCCESS
+
+rm *.o main
+
+
+
+
+FILE a3 Results:
+
+cc    -c -o pars.o pars.c
+cc    -c -o lex.o lex.c
+cc    -c -o main.o main.c
+Please Enter Filename: (automatic)
+
+300	300	300	300	300	300	300	300	300	300	300	300	300	300	300	300	301	301	201	201	201	300	300	300	300	300	201	300	300	300	301	301	Syntax Error found on line 4
+Expected Closing Quote
+
+make: *** [Makefile:8: main] Error 1
+rm *.o main
+
+
+
+
+FILE a4 Results:
+
+cc    -c -o pars.o pars.c
+cc    -c -o lex.o lex.c
+cc    -c -o main.o main.c
+Please Enter Filename: (automatic)
+
+300	300	300	300	300	300	300	300	300	300	300	300	300	300	300	300	301	301	201	201	201	300	300	300	300	300	201	300	300	300	301	301	PROGRAM LEGAL: SUCCESS
+
+rm *.o main
+
+
+
+
+FILE a5 Results:
+
+cc    -c -o pars.o pars.c
+cc    -c -o lex.o lex.c
+cc    -c -o main.o main.c
+Please Enter Filename: (automatic)
+
+300	300	300	300	300	300	300	300	300	300	300	300	300	Error found on line 6
+Expected '='
+
+make: *** [Makefile:8: main] Error 1
+rm *.o main
+
+
+
+
+FILE a6 Results:
+
+cc    -c -o pars.o pars.c
+cc    -c -o lex.o lex.c
+cc    -c -o main.o main.c
+Please Enter Filename: (automatic)
+
+300	300	300	300	300	300	300	300	300	300	300	300	300	201	201	201	201	201	201	300	300	300	300	300	201	300	300	300	301	301	201	300	300	300	301	301	PROGRAM LEGAL: SUCCESS
+
+rm *.o main
+
+
+
+
+FILE a7 Results:
+
+cc    -c -o pars.o pars.c
+cc    -c -o lex.o lex.c
+cc    -c -o main.o main.c
+Please Enter Filename: (automatic)
+
+Error found on line 4
+Expected 'begin' Statement
+
+make: *** [Makefile:8: main] Error 1
+rm *.o main
+
+
+
+
+FILE a8 Results:
+
+cc    -c -o pars.o pars.c
+cc    -c -o lex.o lex.c
+cc    -c -o main.o main.c
+Please Enter Filename: (automatic)
+
+300	300	300	300	300	300	300	300	300	300	300	300	300	Syntax Error found on line 6
+Expected Semicolon
+
+make: *** [Makefile:8: main] Error 1
+rm *.o main
+
+
+
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ 
+[?2004l[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+cc    -c -o lex.o lex.c
+cc    -c -o main.o main.c
+Please Enter Filename: (automatic)
+18
+
+Couldn't open file: 18
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lmake: 'main' is up to date.
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ a8[K[K.[Kmake clean
+[?2004lrm *.o main
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+cc    -c -o lex.o lex.c
+cc    -c -o main.o main.c
+Please Enter Filename: (automatic)
+18
+
+Couldn't open file: 18
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make clean
+[?2004lrm *.o main
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make [K
+[?2004lcc    -c -o pars.o pars.c
+cc    -c -o lex.o lex.c
+cc    -c -o main.o main.c
+Please Enter Filename: (automatic)
+a8
+
+300	352	300	350	300	350	300	350	300	350	300	350	300	301	Syntax Error found on line 6
+Expected Semicolon
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+Please Enter Filename: (automatic)
+a8
+
+300	352	300	350	300	350	300	350	300	350	300	350	300	301	Syntax Error found on line 6
+Expected Semicolon
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+Please Enter Filename: (automatic)
+a8
+
+300	300352	352300	300350	350300	300350	350300	300350	350300	300350	350300	300350	350300	300301	399Syntax Error found on line 6
+Expected Semicolon
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+Please Enter Filename: (automatic)
+a8
+
+300->300
+352->352
+300->300
+350->350
+300->300
+350->350
+300->300
+350->350
+300->300
+350->350
+300->300
+350->350
+300->300
+301->399
+Syntax Error found on line 6
+Expected Semicolon
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o lex.o lex.c
+[01m[Klex.c:[m[K In function ‘[01m[Klexan[m[K’:
+[01m[Klex.c:68:24:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Kprintf[m[K’ makes pointer from integer without a cast [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wint-conversion-Wint-conversion]8;;[m[K]
+   68 |                 printf([01;35m[KnextChar[m[K);
+      |                        [01;35m[K^~~~~~~~[m[K
+      |                        [01;35m[K|[m[K
+      |                        [01;35m[Kchar[m[K
+In file included from [01m[Klex.h:18[m[K,
+                 from [01m[Klex.c:1[m[K:
+[01m[K/usr/include/stdio.h:356:43:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kconst char * restrict[m[K’ but argument is of type ‘[01m[Kchar[m[K’
+  356 | extern int printf ([01;36m[Kconst char *__restrict __format[m[K, ...);
+      |                    [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[01m[Klex.c:68:17:[m[K [01;35m[Kwarning: [m[Kformat not a string literal and no format arguments [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-security-Wformat-security]8;;[m[K]
+   68 |                 [01;35m[Kprintf[m[K(nextChar);
+      |                 [01;35m[K^~~~~~[m[K
+aPlease Enter Filename: (automatic)
+ ^[[A
+
+Couldn't open file: [A
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o lex.o lex.c
+Please Enter Filename: (automatic)
+a8
+
+begin	a	300->300
+352->352
+b	300->300
+350->350
+c	300->300
+350->350
+d	300->300
+350->350
+e	300->300
+350->350
+f	300->300
+350->350
+ghijk_	300->300
+301->399
+Syntax Error found on line 6
+Expected Semicolon
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o lex.o lex.c
+Please Enter Filename: (automatic)
+a8
+
+begin	a	300->300
+352->352
+b	300->300
+350->350
+c	300->300
+350->350
+d	300->300
+350->350
+e	300->300
+350->350
+f	300->300
+350->350
+ghijk_9876	300->300
+399->399
+a	300->300
+352->352
+b_3	300->300
+350->350
+301->301
+399->399
+b	300->300
+352->352
+201->201
+201->201
+c	300->300
+350->350
+hello	300->300
+202->202
+351->351
+201->201
+a_sdf	300->300
+350->350
+301->301
+202->202
+202->202
+351->351
+301->301
+399->399
+end	PROGRAM LEGAL: SUCCESS
+
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make clean[K clean[K./script.sh[7Pmake./script.sh[7Pmake./script.sh
+[?2004l
+FILE a1 Results:
+
+cc    -c -o pars.o pars.c
+cc    -c -o lex.o lex.c
+Please Enter Filename: (automatic)
+
+	Error found on line 2
+Identifiers Must Not Start or End With Underscore
+
+make: *** [Makefile:8: main] Error 1
+rm *.o main
+
+
+
+
+FILE a2 Results:
+
+cc    -c -o pars.o pars.c
+cc    -c -o lex.o lex.c
+cc    -c -o main.o main.c
+Please Enter Filename: (automatic)
+
+						PROGRAM LEGAL: SUCCESS
+
+rm *.o main
+
+
+
+
+FILE a3 Results:
+
+cc    -c -o pars.o pars.c
+cc    -c -o lex.o lex.c
+cc    -c -o main.o main.c
+Please Enter Filename: (automatic)
+
+														Syntax Error found on line 4
+Expected Closing Quote
+
+make: *** [Makefile:8: main] Error 1
+rm *.o main
+
+
+
+
+FILE a4 Results:
+
+cc    -c -o pars.o pars.c
+cc    -c -o lex.o lex.c
+cc    -c -o main.o main.c
+Please Enter Filename: (automatic)
+
+															PROGRAM LEGAL: SUCCESS
+
+rm *.o main
+
+
+
+
+FILE a5 Results:
+
+cc    -c -o pars.o pars.c
+cc    -c -o lex.o lex.c
+cc    -c -o main.o main.c
+Please Enter Filename: (automatic)
+
+									Error found on line 6
+Expected '='
+
+make: *** [Makefile:8: main] Error 1
+rm *.o main
+
+
+
+
+FILE a6 Results:
+
+cc    -c -o pars.o pars.c
+cc    -c -o lex.o lex.c
+cc    -c -o main.o main.c
+Please Enter Filename: (automatic)
+
+														PROGRAM LEGAL: SUCCESS
+
+rm *.o main
+
+
+
+
+FILE a7 Results:
+
+cc    -c -o pars.o pars.c
+cc    -c -o lex.o lex.c
+cc    -c -o main.o main.c
+Please Enter Filename: (automatic)
+
+	Error found on line 4
+Expected 'begin' Statement
+
+make: *** [Makefile:8: main] Error 1
+rm *.o main
+
+
+
+
+FILE a8 Results:
+
+cc    -c -o pars.o pars.c
+cc    -c -o lex.o lex.c
+cc    -c -o main.o main.c
+Please Enter Filename: (automatic)
+
+															PROGRAM LEGAL: SUCCESS
+
+rm *.o main
+
+
+
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ [K]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ [K]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ [K]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ [K]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ ./script.sh
+[?2004l
+FILE a1 Results:
+
+cc    -c -o pars.o pars.c
+cc    -c -o lex.o lex.c
+cc    -c -o main.o main.c
+Please Enter Filename: (automatic)
+
+Error found on line 2
+Identifiers Must Not Start or End With Underscore
+
+make: *** [Makefile:8: main] Error 1
+rm *.o main
+
+
+
+
+FILE a2 Results:
+
+cc    -c -o pars.o pars.c
+cc    -c -o lex.o lex.c
+cc    -c -o main.o main.c
+Please Enter Filename: (automatic)
+
+PROGRAM LEGAL: SUCCESS
+
+rm *.o main
+
+
+
+
+FILE a3 Results:
+
+cc    -c -o pars.o pars.c
+cc    -c -o lex.o lex.c
+cc    -c -o main.o main.c
+Please Enter Filename: (automatic)
+
+Syntax Error found on line 4
+Expected Closing Quote
+
+make: *** [Makefile:8: main] Error 1
+rm *.o main
+
+
+
+
+FILE a4 Results:
+
+cc    -c -o pars.o pars.c
+cc    -c -o lex.o lex.c
+cc    -c -o main.o main.c
+Please Enter Filename: (automatic)
+
+PROGRAM LEGAL: SUCCESS
+
+rm *.o main
+
+
+
+
+FILE a5 Results:
+
+cc    -c -o pars.o pars.c
+cc    -c -o lex.o lex.c
+cc    -c -o main.o main.c
+Please Enter Filename: (automatic)
+
+Error found on line 6
+Expected '='
+
+make: *** [Makefile:8: main] Error 1
+rm *.o main
+
+
+
+
+FILE a6 Results:
+
+cc    -c -o pars.o pars.c
+cc    -c -o lex.o lex.c
+cc    -c -o main.o main.c
+Please Enter Filename: (automatic)
+
+PROGRAM LEGAL: SUCCESS
+
+rm *.o main
+
+
+
+
+FILE a7 Results:
+
+cc    -c -o pars.o pars.c
+cc    -c -o lex.o lex.c
+cc    -c -o main.o main.c
+Please Enter Filename: (automatic)
+
+Error found on line 4
+Expected 'begin' Statement
+
+make: *** [Makefile:8: main] Error 1
+rm *.o main
+
+
+
+
+FILE a8 Results:
+
+cc    -c -o pars.o pars.c
+cc    -c -o lex.o lex.c
+cc    -c -o main.o main.c
+Please Enter Filename: (automatic)
+
+PROGRAM LEGAL: SUCCESS
+
+rm *.o main
+
+
+
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ [K]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ [K]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ [K]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+cc    -c -o lex.o lex.c
+cc    -c -o main.o main.c
+Please Enter Filename: (automatic)
+a8
+
+beginabcdefghijk_9876ab_3bchelloa_sdfendPROGRAM LEGAL: SUCCESS
+
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o lex.o lex.c
+Please Enter Filename: (automatic)
+a8
+
+begin a b c d e f ghijk_9876 a b_3 b c hello a_sdf end PROGRAM LEGAL: SUCCESS
+
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o lex.o lex.c
+Please Enter Filename: (automatic)
+a8
+
+PROGRAM LEGAL: SUCCESS
+
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o lex.o lex.c
+Please Enter Filename: (automatic)
+a8
+
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+TEST
+PROGRAM LEGAL: SUCCESS
+
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o lex.o lex.c
+Please Enter Filename: (automatic)
+a8
+
+TEST0
+TEST1
+TEST2
+TEST3
+TEST4
+TEST5
+TEST6
+TEST7
+TEST8
+TEST9
+TEST10
+TEST11
+TEST12
+TEST13
+TEST14
+TEST15
+TEST16
+TEST17
+TEST18
+TEST19
+TEST20
+TEST21
+TEST22
+TEST23
+TEST24
+TEST25
+TEST26
+TEST27
+TEST28
+TEST29
+TEST30
+TEST31
+TEST32
+TEST33
+TEST34
+TEST35
+TEST36
+TEST37
+TEST38
+TEST39
+TEST40
+TEST41
+TEST42
+TEST43
+TEST44
+TEST45
+TEST46
+TEST47
+TEST48
+TEST49
+TEST50
+TEST51
+TEST52
+TEST53
+TEST54
+TEST55
+TEST56
+TEST57
+TEST58
+TEST59
+TEST60
+TEST61
+TEST62
+TEST63
+TEST64
+TEST65
+TEST66
+TEST67
+TEST68
+TEST69
+TEST70
+TEST71
+TEST72
+TEST73
+TEST74
+TEST75
+TEST76
+TEST77
+TEST78
+TEST79
+TEST80
+TEST81
+TEST82
+TEST83
+TEST84
+TEST85
+TEST86
+TEST87
+TEST88
+TEST89
+TEST90
+TEST91
+TEST92
+TEST93
+TEST94
+TEST95
+TEST0
+TEST1
+TEST2
+TEST3
+TEST4
+TEST5
+TEST6
+TEST7
+TEST8
+TEST9
+TEST10
+TEST11
+TEST12
+TEST13
+TEST14
+TEST15
+TEST16
+TEST17
+TEST18
+TEST19
+TEST20
+TEST21
+TEST22
+TEST23
+TEST24
+TEST25
+TEST26
+TEST27
+TEST28
+TEST29
+TEST30
+TEST31
+TEST32
+TEST33
+TEST34
+TEST35
+TEST36
+TEST37
+TEST38
+TEST39
+TEST40
+TEST41
+TEST42
+TEST43
+TEST44
+TEST45
+TEST46
+TEST47
+TEST48
+TEST49
+TEST50
+TEST51
+TEST52
+TEST53
+TEST54
+TEST55
+TEST56
+TEST57
+TEST58
+TEST59
+TEST60
+TEST61
+TEST62
+TEST63
+TEST64
+TEST65
+TEST66
+TEST67
+TEST68
+TEST69
+TEST70
+TEST71
+TEST72
+TEST73
+TEST74
+TEST75
+TEST76
+TEST77
+TEST78
+TEST79
+TEST80
+TEST81
+TEST82
+TEST83
+TEST84
+TEST85
+TEST86
+TEST87
+TEST88
+TEST89
+TEST90
+TEST91
+TEST92
+TEST93
+TEST94
+TEST95
+TEST0
+TEST1
+TEST2
+TEST3
+TEST4
+TEST5
+TEST6
+TEST7
+TEST8
+TEST9
+TEST10
+TEST11
+TEST12
+TEST13
+TEST14
+TEST15
+TEST16
+TEST17
+TEST18
+TEST19
+TEST20
+TEST21
+TEST22
+TEST23
+TEST24
+TEST25
+TEST26
+TEST27
+TEST28
+TEST29
+TEST30
+TEST31
+TEST32
+TEST33
+TEST34
+TEST35
+TEST36
+TEST37
+TEST38
+TEST39
+TEST40
+TEST41
+TEST42
+TEST43
+TEST44
+TEST45
+TEST46
+TEST47
+TEST48
+TEST49
+TEST50
+TEST51
+TEST52
+TEST53
+TEST54
+TEST55
+TEST56
+TEST57
+TEST58
+TEST59
+TEST60
+TEST61
+TEST62
+TEST63
+TEST64
+TEST65
+TEST66
+TEST67
+TEST68
+TEST69
+TEST70
+TEST71
+TEST72
+TEST73
+TEST74
+TEST75
+TEST76
+TEST77
+TEST78
+TEST79
+TEST80
+TEST81
+TEST82
+TEST83
+TEST84
+TEST85
+TEST86
+TEST87
+TEST88
+TEST89
+TEST90
+TEST91
+TEST92
+TEST93
+TEST94
+TEST95
+TEST0
+TEST1
+TEST2
+TEST3
+TEST4
+TEST5
+TEST6
+TEST7
+TEST8
+TEST9
+TEST10
+TEST11
+TEST12
+TEST13
+TEST14
+TEST15
+TEST16
+TEST17
+TEST18
+TEST19
+TEST20
+TEST21
+TEST22
+TEST23
+TEST24
+TEST25
+TEST26
+TEST27
+TEST28
+TEST29
+TEST30
+TEST31
+TEST32
+TEST33
+TEST34
+TEST35
+TEST36
+TEST37
+TEST38
+TEST39
+TEST40
+TEST41
+TEST42
+TEST43
+TEST44
+TEST45
+TEST46
+TEST47
+TEST48
+TEST49
+TEST50
+TEST51
+TEST52
+TEST53
+TEST54
+TEST55
+TEST56
+TEST57
+TEST58
+TEST59
+TEST60
+TEST61
+TEST62
+TEST63
+TEST64
+TEST65
+TEST66
+TEST67
+TEST68
+TEST69
+TEST70
+TEST71
+TEST72
+TEST73
+TEST74
+TEST75
+TEST76
+TEST77
+TEST78
+TEST79
+TEST80
+TEST81
+TEST82
+TEST83
+TEST84
+TEST85
+TEST86
+TEST87
+TEST88
+TEST89
+TEST90
+TEST91
+TEST92
+TEST93
+TEST94
+TEST95
+TEST0
+TEST1
+TEST2
+TEST3
+TEST4
+TEST5
+TEST6
+TEST7
+TEST8
+TEST9
+TEST10
+TEST11
+TEST12
+TEST13
+TEST14
+TEST15
+TEST16
+TEST17
+TEST18
+TEST19
+TEST20
+TEST21
+TEST22
+TEST23
+TEST24
+TEST25
+TEST26
+TEST27
+TEST28
+TEST29
+TEST30
+TEST31
+TEST32
+TEST33
+TEST34
+TEST35
+TEST36
+TEST37
+TEST38
+TEST39
+TEST40
+TEST41
+TEST42
+TEST43
+TEST44
+TEST45
+TEST46
+TEST47
+TEST48
+TEST49
+TEST50
+TEST51
+TEST52
+TEST53
+TEST54
+TEST55
+TEST56
+TEST57
+TEST58
+TEST59
+TEST60
+TEST61
+TEST62
+TEST63
+TEST64
+TEST65
+TEST66
+TEST67
+TEST68
+TEST69
+TEST70
+TEST71
+TEST72
+TEST73
+TEST74
+TEST75
+TEST76
+TEST77
+TEST78
+TEST79
+TEST80
+TEST81
+TEST82
+TEST83
+TEST84
+TEST85
+TEST86
+TEST87
+TEST88
+TEST89
+TEST90
+TEST91
+TEST92
+TEST93
+TEST94
+TEST95
+TEST0
+TEST1
+TEST2
+TEST3
+TEST4
+TEST5
+TEST6
+TEST7
+TEST8
+TEST9
+TEST10
+TEST11
+TEST12
+TEST13
+TEST14
+TEST15
+TEST16
+TEST17
+TEST18
+TEST19
+TEST20
+TEST21
+TEST22
+TEST23
+TEST24
+TEST25
+TEST26
+TEST27
+TEST28
+TEST29
+TEST30
+TEST31
+TEST32
+TEST33
+TEST34
+TEST35
+TEST36
+TEST37
+TEST38
+TEST39
+TEST40
+TEST41
+TEST42
+TEST43
+TEST44
+TEST45
+TEST46
+TEST47
+TEST48
+TEST49
+TEST50
+TEST51
+TEST52
+TEST53
+TEST54
+TEST55
+TEST56
+TEST57
+TEST58
+TEST59
+TEST60
+TEST61
+TEST62
+TEST63
+TEST64
+TEST65
+TEST66
+TEST67
+TEST68
+TEST69
+TEST70
+TEST71
+TEST72
+TEST73
+TEST74
+TEST75
+TEST76
+TEST77
+TEST78
+TEST79
+TEST80
+TEST81
+TEST82
+TEST83
+TEST84
+TEST85
+TEST86
+TEST87
+TEST88
+TEST89
+TEST90
+TEST91
+TEST92
+TEST93
+TEST94
+TEST95
+TEST0
+TEST1
+TEST2
+TEST3
+TEST4
+TEST5
+TEST6
+TEST7
+TEST8
+TEST9
+TEST10
+TEST11
+TEST12
+TEST13
+TEST14
+TEST15
+TEST16
+TEST17
+TEST18
+TEST19
+TEST20
+TEST21
+TEST22
+TEST23
+TEST24
+TEST25
+TEST26
+TEST27
+TEST28
+TEST29
+TEST30
+TEST31
+TEST32
+TEST33
+TEST34
+TEST35
+TEST36
+TEST37
+TEST38
+TEST39
+TEST40
+TEST41
+TEST42
+TEST43
+TEST44
+TEST45
+TEST46
+TEST47
+TEST48
+TEST49
+TEST50
+TEST51
+TEST52
+TEST53
+TEST54
+TEST55
+TEST56
+TEST57
+TEST58
+TEST59
+TEST60
+TEST61
+TEST62
+TEST63
+TEST64
+TEST65
+TEST66
+TEST67
+TEST68
+TEST69
+TEST70
+TEST71
+TEST72
+TEST73
+TEST74
+TEST75
+TEST76
+TEST77
+TEST78
+TEST79
+TEST80
+TEST81
+TEST82
+TEST83
+TEST84
+TEST85
+TEST86
+TEST87
+TEST88
+TEST89
+TEST90
+TEST91
+TEST92
+TEST93
+TEST94
+TEST95
+TEST0
+TEST1
+TEST2
+TEST3
+TEST4
+TEST5
+TEST6
+TEST7
+TEST8
+TEST9
+TEST10
+TEST11
+TEST12
+TEST13
+TEST14
+TEST15
+TEST16
+TEST17
+TEST18
+TEST19
+TEST20
+TEST21
+TEST22
+TEST23
+TEST24
+TEST25
+TEST26
+TEST27
+TEST28
+TEST29
+TEST30
+TEST31
+TEST32
+TEST33
+TEST34
+TEST35
+TEST36
+TEST37
+TEST38
+TEST39
+TEST40
+TEST41
+TEST42
+TEST43
+TEST44
+TEST45
+TEST46
+TEST47
+TEST48
+TEST49
+TEST50
+TEST51
+TEST52
+TEST53
+TEST54
+TEST55
+TEST56
+TEST57
+TEST58
+TEST59
+TEST60
+TEST61
+TEST62
+TEST63
+TEST64
+TEST65
+TEST66
+TEST67
+TEST68
+TEST69
+TEST70
+TEST71
+TEST72
+TEST73
+TEST74
+TEST75
+TEST76
+TEST77
+TEST78
+TEST79
+TEST80
+TEST81
+TEST82
+TEST83
+TEST84
+TEST85
+TEST86
+TEST87
+TEST88
+TEST89
+TEST90
+TEST91
+TEST92
+TEST93
+TEST94
+TEST95
+TEST0
+TEST1
+TEST2
+TEST3
+TEST4
+TEST5
+TEST6
+TEST7
+TEST8
+TEST9
+TEST10
+TEST11
+TEST12
+TEST13
+TEST14
+TEST15
+TEST16
+TEST17
+TEST18
+TEST19
+TEST20
+TEST21
+TEST22
+TEST23
+TEST24
+TEST25
+TEST26
+TEST27
+TEST28
+TEST29
+TEST30
+TEST31
+TEST32
+TEST33
+TEST34
+TEST35
+TEST36
+TEST37
+TEST38
+TEST39
+TEST40
+TEST41
+TEST42
+TEST43
+TEST44
+TEST45
+TEST46
+TEST47
+TEST48
+TEST49
+TEST50
+TEST51
+TEST52
+TEST53
+TEST54
+TEST55
+TEST56
+TEST57
+TEST58
+TEST59
+TEST60
+TEST61
+TEST62
+TEST63
+TEST64
+TEST65
+TEST66
+TEST67
+TEST68
+TEST69
+TEST70
+TEST71
+TEST72
+TEST73
+TEST74
+TEST75
+TEST76
+TEST77
+TEST78
+TEST79
+TEST80
+TEST81
+TEST82
+TEST83
+TEST84
+TEST85
+TEST86
+TEST87
+TEST88
+TEST89
+TEST90
+TEST91
+TEST92
+TEST93
+TEST94
+TEST95
+TEST0
+TEST1
+TEST2
+TEST3
+TEST4
+TEST5
+TEST6
+TEST7
+TEST8
+TEST9
+TEST10
+TEST11
+TEST12
+TEST13
+TEST14
+TEST15
+TEST16
+TEST17
+TEST18
+TEST19
+TEST20
+TEST21
+TEST22
+TEST23
+TEST24
+TEST25
+TEST26
+TEST27
+TEST28
+TEST29
+TEST30
+TEST31
+TEST32
+TEST33
+TEST34
+TEST35
+TEST36
+TEST37
+TEST38
+TEST39
+TEST40
+TEST41
+TEST42
+TEST43
+TEST44
+TEST45
+TEST46
+TEST47
+TEST48
+TEST49
+TEST50
+TEST51
+TEST52
+TEST53
+TEST54
+TEST55
+TEST56
+TEST57
+TEST58
+TEST59
+TEST60
+TEST61
+TEST62
+TEST63
+TEST64
+TEST65
+TEST66
+TEST67
+TEST68
+TEST69
+TEST70
+TEST71
+TEST72
+TEST73
+TEST74
+TEST75
+TEST76
+TEST77
+TEST78
+TEST79
+TEST80
+TEST81
+TEST82
+TEST83
+TEST84
+TEST85
+TEST86
+TEST87
+TEST88
+TEST89
+TEST90
+TEST91
+TEST92
+TEST93
+TEST94
+TEST95
+TEST0
+TEST1
+TEST2
+TEST3
+TEST4
+TEST5
+TEST6
+TEST7
+TEST8
+TEST9
+TEST10
+TEST11
+TEST12
+TEST13
+TEST14
+TEST15
+TEST16
+TEST17
+TEST18
+TEST19
+TEST20
+TEST21
+TEST22
+TEST23
+TEST24
+TEST25
+TEST26
+TEST27
+TEST28
+TEST29
+TEST30
+TEST31
+TEST32
+TEST33
+TEST34
+TEST35
+TEST36
+TEST37
+TEST38
+TEST39
+TEST40
+TEST41
+TEST42
+TEST43
+TEST44
+TEST45
+TEST46
+TEST47
+TEST48
+TEST49
+TEST50
+TEST51
+TEST52
+TEST53
+TEST54
+TEST55
+TEST56
+TEST57
+TEST58
+TEST59
+TEST60
+TEST61
+TEST62
+TEST63
+TEST64
+TEST65
+TEST66
+TEST67
+TEST68
+TEST69
+TEST70
+TEST71
+TEST72
+TEST73
+TEST74
+TEST75
+TEST76
+TEST77
+TEST78
+TEST79
+TEST80
+TEST81
+TEST82
+TEST83
+TEST84
+TEST85
+TEST86
+TEST87
+TEST88
+TEST89
+TEST90
+TEST91
+TEST92
+TEST93
+TEST94
+TEST95
+TEST0
+TEST1
+TEST2
+TEST3
+TEST4
+TEST5
+TEST6
+TEST7
+TEST8
+TEST9
+TEST10
+TEST11
+TEST12
+TEST13
+TEST14
+TEST15
+TEST16
+TEST17
+TEST18
+TEST19
+TEST20
+TEST21
+TEST22
+TEST23
+TEST24
+TEST25
+TEST26
+TEST27
+TEST28
+TEST29
+TEST30
+TEST31
+TEST32
+TEST33
+TEST34
+TEST35
+TEST36
+TEST37
+TEST38
+TEST39
+TEST40
+TEST41
+TEST42
+TEST43
+TEST44
+TEST45
+TEST46
+TEST47
+TEST48
+TEST49
+TEST50
+TEST51
+TEST52
+TEST53
+TEST54
+TEST55
+TEST56
+TEST57
+TEST58
+TEST59
+TEST60
+TEST61
+TEST62
+TEST63
+TEST64
+TEST65
+TEST66
+TEST67
+TEST68
+TEST69
+TEST70
+TEST71
+TEST72
+TEST73
+TEST74
+TEST75
+TEST76
+TEST77
+TEST78
+TEST79
+TEST80
+TEST81
+TEST82
+TEST83
+TEST84
+TEST85
+TEST86
+TEST87
+TEST88
+TEST89
+TEST90
+TEST91
+TEST92
+TEST93
+TEST94
+TEST95
+TEST0
+TEST1
+TEST2
+TEST3
+TEST4
+TEST5
+TEST6
+TEST7
+TEST8
+TEST9
+TEST10
+TEST11
+TEST12
+TEST13
+TEST14
+TEST15
+TEST16
+TEST17
+TEST18
+TEST19
+TEST20
+TEST21
+TEST22
+TEST23
+TEST24
+TEST25
+TEST26
+TEST27
+TEST28
+TEST29
+TEST30
+TEST31
+TEST32
+TEST33
+TEST34
+TEST35
+TEST36
+TEST37
+TEST38
+TEST39
+TEST40
+TEST41
+TEST42
+TEST43
+TEST44
+TEST45
+TEST46
+TEST47
+TEST48
+TEST49
+TEST50
+TEST51
+TEST52
+TEST53
+TEST54
+TEST55
+TEST56
+TEST57
+TEST58
+TEST59
+TEST60
+TEST61
+TEST62
+TEST63
+TEST64
+TEST65
+TEST66
+TEST67
+TEST68
+TEST69
+TEST70
+TEST71
+TEST72
+TEST73
+TEST74
+TEST75
+TEST76
+TEST77
+TEST78
+TEST79
+TEST80
+TEST81
+TEST82
+TEST83
+TEST84
+TEST85
+TEST86
+TEST87
+TEST88
+TEST89
+TEST90
+TEST91
+TEST92
+TEST93
+TEST94
+TEST95
+TEST0
+TEST1
+TEST2
+TEST3
+TEST4
+TEST5
+TEST6
+TEST7
+TEST8
+TEST9
+TEST10
+TEST11
+TEST12
+TEST13
+TEST14
+TEST15
+TEST16
+TEST17
+TEST18
+TEST19
+TEST20
+TEST21
+TEST22
+TEST23
+TEST24
+TEST25
+TEST26
+TEST27
+TEST28
+TEST29
+TEST30
+TEST31
+TEST32
+TEST33
+TEST34
+TEST35
+TEST36
+TEST37
+TEST38
+TEST39
+TEST40
+TEST41
+TEST42
+TEST43
+TEST44
+TEST45
+TEST46
+TEST47
+TEST48
+TEST49
+TEST50
+TEST51
+TEST52
+TEST53
+TEST54
+TEST55
+TEST56
+TEST57
+TEST58
+TEST59
+TEST60
+TEST61
+TEST62
+TEST63
+TEST64
+TEST65
+TEST66
+TEST67
+TEST68
+TEST69
+TEST70
+TEST71
+TEST72
+TEST73
+TEST74
+TEST75
+TEST76
+TEST77
+TEST78
+TEST79
+TEST80
+TEST81
+TEST82
+TEST83
+TEST84
+TEST85
+TEST86
+TEST87
+TEST88
+TEST89
+TEST90
+TEST91
+TEST92
+TEST93
+TEST94
+TEST95
+TEST0
+TEST1
+TEST2
+TEST3
+TEST4
+TEST5
+TEST6
+TEST7
+TEST8
+TEST9
+TEST10
+TEST11
+TEST12
+TEST13
+TEST14
+TEST15
+TEST16
+TEST17
+TEST18
+TEST19
+TEST20
+TEST21
+TEST22
+TEST23
+TEST24
+TEST25
+TEST26
+TEST27
+TEST28
+TEST29
+TEST30
+TEST31
+TEST32
+TEST33
+TEST34
+TEST35
+TEST36
+TEST37
+TEST38
+TEST39
+TEST40
+TEST41
+TEST42
+TEST43
+TEST44
+TEST45
+TEST46
+TEST47
+TEST48
+TEST49
+TEST50
+TEST51
+TEST52
+TEST53
+TEST54
+TEST55
+TEST56
+TEST57
+TEST58
+TEST59
+TEST60
+TEST61
+TEST62
+TEST63
+TEST64
+TEST65
+TEST66
+TEST67
+TEST68
+TEST69
+TEST70
+TEST71
+TEST72
+TEST73
+TEST74
+TEST75
+TEST76
+TEST77
+TEST78
+TEST79
+TEST80
+TEST81
+TEST82
+TEST83
+TEST84
+TEST85
+TEST86
+TEST87
+TEST88
+TEST89
+TEST90
+TEST91
+TEST92
+TEST93
+TEST94
+TEST95
+PROGRAM LEGAL: SUCCESS
+
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o lex.o lex.c
+Please Enter Filename: (automatic)
+a8
+
+TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTPROGRAM LEGAL: SUCCESS
+
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o lex.o lex.c
+Please Enter Filename: (automatic)
+a8
+
+TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTPROGRAM LEGAL: SUCCESS
+
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o lex.o lex.c
+cc    -c -o main.o main.c
+Please Enter Filename: (automatic)
+a8
+
+PROGRAM LEGAL: SUCCESS
+
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lmake: 'main' is up to date.
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ a8
+[?2004la8: command not found
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make clean
+[?2004lrm *.o main
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make [K
+[?2004lcc    -c -o pars.o pars.c
+cc    -c -o lex.o lex.c
+cc    -c -o main.o main.c
+Please Enter Filename: (automatic)
+a8
+
+Syntax Error found on line 7
+Expected Identifier
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lmake: 'main' is up to date.
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ a[Kmake clean
+[?2004lrm *.o main
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+cc    -c -o lex.o lex.c
+cc    -c -o main.o main.c
+Please Enter Filename: (automatic)
+a8
+
+PROGRAM LEGAL: SUCCESS
+
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make clean
+[?2004lrm *.o main
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+cc    -c -o lex.o lex.c
+cc    -c -o main.o main.c
+Please Enter Filename: (automatic)
+a8
+
+Syntax Error found on line 7
+Expected Identifier
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lmake: 'main' is up to date.
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make clean
+[?2004lrm *.o main
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make [K
+[?2004lcc    -c -o pars.o pars.c
+cc    -c -o lex.o lex.c
+cc    -c -o main.o main.c
+Please Enter Filename: (automatic)
+a1
+
+Couldn't open file: a1
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lmake: 'main' is up to date.
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ a[Kmake clean
+[?2004lrm *.o main
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+cc    -c -o lex.o lex.c
+cc    -c -o main.o main.c
+aPlease Enter Filename: (automatic)
+1  a1.i in
+
+Syntax Error found on line 2
+Expected Identifier
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+cc    -c -o lex.o lex.c
+[01m[Klex.c:[m[K In function ‘[01m[Klexan[m[K’:
+[01m[Klex.c:82:29:[m[K [01;31m[Kerror: [m[Kassignment to expression with array type
+   82 |             currentIDLexeme [01;31m[K=[m[K ("%s", idLexeme);
+      |                             [01;31m[K^[m[K
+[01m[Klex.c:83:28:[m[K [01;31m[Kerror: [m[Karray subscript is not an integer
+   83 |             currentIDLexeme[01;31m[K[[m[KidLexeme] = '\0';
+      |                            [01;31m[K^[m[K
+make: *** [<builtin>: lex.o] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o lex.o lex.c
+[01m[Klex.c:[m[K In function ‘[01m[Klexan[m[K’:
+[01m[Klex.c:82:29:[m[K [01;31m[Kerror: [m[Kassignment to expression with array type
+   82 |             currentIDLexeme [01;31m[K=[m[K ("%s", idLexeme);
+      |                             [01;31m[K^[m[K
+make: *** [<builtin>: lex.o] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o lex.o lex.c
+/usr/bin/ld: lex.o: warning: relocation against `currentIDLexeme' in read-only section `.text'
+/usr/bin/ld: lex.o: in function `lexan':
+lex.c:(.text+0x41e): undefined reference to `currentIDLexeme'
+/usr/bin/ld: warning: creating DT_TEXTREL in a PIE
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:7: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ am[K[Kmake
+[?2004l/usr/bin/ld: lex.o: warning: relocation against `currentIDLexeme' in read-only section `.text'
+/usr/bin/ld: lex.o: in function `lexan':
+lex.c:(.text+0x41e): undefined reference to `currentIDLexeme'
+/usr/bin/ld: warning: creating DT_TEXTREL in a PIE
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:7: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004l/usr/bin/ld: lex.o: warning: relocation against `currentIDLexeme' in read-only section `.text'
+/usr/bin/ld: lex.o: in function `lexan':
+lex.c:(.text+0x41e): undefined reference to `currentIDLexeme'
+/usr/bin/ld: warning: creating DT_TEXTREL in a PIE
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:7: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004l/usr/bin/ld: lex.o: warning: relocation against `currentIDLexeme' in read-only section `.text'
+/usr/bin/ld: lex.o: in function `lexan':
+lex.c:(.text+0x41e): undefined reference to `currentIDLexeme'
+/usr/bin/ld: warning: creating DT_TEXTREL in a PIE
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:7: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004l/usr/bin/ld: lex.o: in function `lexan':
+lex.c:(.text+0x41e): undefined reference to `currentIDLexeme'
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:7: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004l/usr/bin/ld: lex.o: in function `lexan':
+lex.c:(.text+0x41e): undefined reference to `currentIDLexeme'
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:7: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o lex.o lex.c
+[01m[Klex.c:7:1:[m[K [01;35m[Kwarning: [m[Kdata definition has no type or storage class
+    7 | [01;35m[KcurrentIDLexeme[m[K = "";
+      | [01;35m[K^~~~~~~~~~~~~~~[m[K
+[01m[Klex.c:7:1:[m[K [01;35m[Kwarning: [m[Ktype defaults to ‘[01m[Kint[m[K’ in declaration of ‘[01m[KcurrentIDLexeme[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wimplicit-int-Wimplicit-int]8;;[m[K]
+[01m[Klex.c:7:1:[m[K [01;31m[Kerror: [m[Kconflicting types for ‘[01m[KcurrentIDLexeme[m[K’; have ‘[01m[Kint[m[K’
+In file included from [01m[Klex.c:1[m[K:
+[01m[Klex.h:32:14:[m[K [01;36m[Knote: [m[Kprevious declaration of ‘[01m[KcurrentIDLexeme[m[K’ with type ‘[01m[Kchar *[m[K’
+   32 | extern char* [01;36m[KcurrentIDLexeme[m[K;
+      |              [01;36m[K^~~~~~~~~~~~~~~[m[K
+[01m[Klex.c:7:19:[m[K [01;35m[Kwarning: [m[Kinitialization of ‘[01m[Kint[m[K’ from ‘[01m[Kchar *[m[K’ makes integer from pointer without a cast [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wint-conversion-Wint-conversion]8;;[m[K]
+    7 | currentIDLexeme = [01;35m[K""[m[K;
+      |                   [01;35m[K^~[m[K
+[01m[Klex.c:7:19:[m[K [01;31m[Kerror: [m[Kinitializer element is not computable at load time
+[01m[Klex.c:[m[K In function ‘[01m[Klexan[m[K’:
+[01m[Klex.c:83:29:[m[K [01;35m[Kwarning: [m[Kassignment to ‘[01m[Kint[m[K’ from ‘[01m[Kchar *[m[K’ makes integer from pointer without a cast [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wint-conversion-Wint-conversion]8;;[m[K]
+   83 |             currentIDLexeme [01;35m[K=[m[K ("%s", idLexeme);
+      |                             [01;35m[K^[m[K
+make: *** [<builtin>: lex.o] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o lex.o lex.c
+Please Enter Filename: (automatic)
+a8
+
+Couldn't open file: a8
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lmake: 'main' is up to date.
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ k[Kmake clean
+[?2004lrm *.o main
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+cc    -c -o lex.o lex.c
+cc    -c -o main.o main.c
+Please Enter Filename: (automatic)
+a8.  a 1.in
+
+Error found on line 2
+Expected '='
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+[01m[Kpars.c:[m[K In function ‘[01m[KassignStmt[m[K’:
+[01m[Kpars.c:104:9:[m[K [01;35m[Kwarning: [m[Kformat not a string literal and no format arguments [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-security-Wformat-security]8;;[m[K]
+  104 |         [01;35m[Kprintf[m[K(currentIDLexeme);
+      |         [01;35m[K^~~~~~[m[K
+Please Enter Filename: (automatic)
+^Z
+[1]+  Stopped                 make
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+Please Enter Filename: (automatic)
+a1
+
+Couldn't open file: a1
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make clean
+[?2004lrm *.o main
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+cc    -c -o lex.o lex.c
+cc    -c -o main.o main.c
+a1Please Enter Filename: (automatic)
+.in     a1j.  .in
+
+Syntax Error found on line 2
+Expected Identifier
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make clean
+[?2004lrm *.o main
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make a1.[K[K[K[K
+[?2004lcc    -c -o pars.o pars.c
+cc    -c -o lex.o lex.c
+cc    -c -o main.o main.c
+Please Enter Filename: (automatic)
+a1.in
+
+Syntax Error found on line 2
+Expected Identifier
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+Please Enter Filename: (automatic)
+a1
+
+Couldn't open file: a1
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make clean
+[?2004lrm *.o main
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+cc    -c -o lex.o lex.c
+cc    -c -o main.o main.c
+aPlease Enter Filename: (automatic)
+1  a1.in
+
+Syntax Error found on line 2
+Expected Identifier
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make clean
+[?2004lrm *.o main
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+[01m[Kpars.c:[m[K In function ‘[01m[KassignStmt[m[K’:
+[01m[Kpars.c:103:12:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Kprintf[m[K’ makes pointer from integer without a cast [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wint-conversion-Wint-conversion]8;;[m[K]
+  103 |     printf([01;35m[KlookAhead[m[K);
+      |            [01;35m[K^~~~~~~~~[m[K
+      |            [01;35m[K|[m[K
+      |            [01;35m[Kint[m[K
+In file included from [01m[Klex.h:18[m[K,
+                 from [01m[Kpars.h:10[m[K,
+                 from [01m[Kpars.c:1[m[K:
+[01m[K/usr/include/stdio.h:356:43:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kconst char * restrict[m[K’ but argument is of type ‘[01m[Kint[m[K’
+  356 | extern int printf ([01;36m[Kconst char *__restrict __format[m[K, ...);
+      |                    [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[01m[Kpars.c:103:5:[m[K [01;35m[Kwarning: [m[Kformat not a string literal and no format arguments [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-security-Wformat-security]8;;[m[K]
+  103 |     [01;35m[Kprintf[m[K(lookAhead);
+      |     [01;35m[K^~~~~~[m[K
+cc    -c -o lex.o lex.c
+cc    -c -o main.o main.c
+Please Enter Filename: (automatic)
+a^Z
+[2]+  Stopped                 make
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+Please Enter Filename: (automatic)
+a1.in
+
+6971296Syntax Error found on line 2
+Expected Identifier
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+Please Enter Filename: (automatic)
+a1.in
+
+11493280 Syntax Error found on line 2
+Expected Identifier
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make clean
+[?2004lrm *.o main
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+cc    -c -o lex.o lex.c
+cc    -c -o main.o main.c
+Please Enter Filename: (automatic)
+a1
+
+Couldn't open file: a1
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make clean
+[?2004lrm *.o main
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+cc    -c -o lex.o lex.c
+cc    -c -o main.o main.c
+Please Enter Filename: (automatic)
+a1.in
+
+6504352	Syntax Error found on line 2
+Expected Identifier
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+Please Enter Filename: (automatic)
+a1in  .in
+
+TEST30199712	Syntax Error found on line 2
+Expected Identifier
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o lex.o lex.c
+Please Enter Filename: (automatic)
+a1.in
+
+beginintTEST23166880	Syntax Error found on line 2
+Expected Identifier
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make clean
+[?2004lrm *.o main
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make [K
+[?2004lcc    -c -o pars.o pars.c
+cc    -c -o lex.o lex.c
+cc    -c -o main.o main.c
+aPlease Enter Filename: (automatic)
+a1.in
+
+Couldn't open file: aa1.in
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make clean
+[?2004lrm *.o main
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+cc    -c -o lex.o lex.c
+cc    -c -o main.o main.c
+Please Enter Filename: (automatic)
+a1.in
+
+begin int TEST31887264	Syntax Error found on line 2
+Expected Identifier
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+[01m[Kpars.c:[m[K In function ‘[01m[KassignStmt[m[K’:
+[01m[Kpars.c:104:28:[m[K [01;31m[Kerror: [m[Kexpected expression before ‘[01m[K)[m[K’ token
+  104 |     if(lookAhead == INT_VAL[01;31m[K)[m[K
+      |                            [01;31m[K^[m[K
+make: *** [<builtin>: pars.o] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+[01m[Kpars.c:[m[K In function ‘[01m[KassignStmt[m[K’:
+[01m[Kpars.c:104:28:[m[K [01;31m[Kerror: [m[Kexpected expression before ‘[01m[K)[m[K’ token
+  104 |     if(lookAhead == INT_VAL[01;31m[K)[m[K
+      |                            [01;31m[K^[m[K
+make: *** [<builtin>: pars.o] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make clean
+[?2004lrm *.o main
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+cc    -c -o lex.o lex.c
+cc    -c -o main.o main.c
+Please Enter Filename: (automatic)
+a1.in
+
+begin int TEST24178592	Syntax Error found on line 2
+Expected Identifier
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o lex.o lex.c
+Please Enter Filename: (automatic)
+a1.in
+
+begin beginint intTEST12447648	Syntax Error found on line 2
+Expected Identifier
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ mka[K[Kake
+[?2004lcc    -c -o pars.o pars.c
+cc    -c -o lex.o lex.c
+Please Enter Filename: (automatic)
+a1.in
+
+beginintError found on line 2
+Expected '='
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make clean
+[?2004lrm *.o main
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+cc    -c -o lex.o lex.c
+cc    -c -o main.o main.c
+Please Enter Filename: (automatic)
+a1.in
+
+begin 400 int 16383904 Error found on line 2
+Expected '='
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o main.o main.c
+TEST1	10Please Enter Filename: (automatic)
+a1.   a1.in
+
+begin 400 int 34406304 Error found on line 2
+Expected '='
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o lex.o lex.c
+[01m[Klex.c:110:2:[m[K [01;31m[Kerror: [m[Kexpected identifier or ‘[01m[K([m[K’ before numeric constant
+  110 | }[01;31m[K1[m[K
+      |  [01;31m[K^[m[K
+make: *** [<builtin>: lex.o] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ a[Kmake
+[?2004lcc    -c -o lex.o lex.c
+aTEST1	10Please Enter Filename: (automatic)
+1  a1
+
+Couldn't open file: a1
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make clean]m[K[K\ma[K[K[K\[K
+[?2004lrm *.o main
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make\[K
+[?2004lcc    -c -o pars.o pars.c
+cc    -c -o lex.o lex.c
+cc    -c -o main.o main.c
+aTEST1	10Please Enter Filename: (automatic)
+a1.in
+
+Couldn't open file: aa1.in
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lmake: 'main' is up to date.
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make clean
+[?2004lrm *.o main
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+cc    -c -o lex.o lex.c
+cc    -c -o main.o main.c
+aTEST1	10Please Enter Filename: (automatic)
+1 1.in] 
+
+0 ival begin 400 6 ival int 6598560 Error found on line 2
+Expected '='
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o lex.o lex.c
+[01m[Klex.c:[m[K In function ‘[01m[Klookup[m[K’:
+[01m[Klex.c:101:50:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kprintf[m[K’
+  101 |             printf("%s\n" , myTable[i].charValue)
+      |                                                  [01;31m[K^[m[K
+      |                                                  [32m[K;[m[K
+  102 |             [32m[Kprintf[m[K("%d\n" , myTable[i].type);
+      |             [32m[K~~~~~~[m[K                                
+make: *** [<builtin>: lex.o] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o lex.o lex.c
+TEST1	10Please Enter Filename: (automatic)
+a1.in
+
+Ival = 0
+begin
+400
+Ival = 6
+int
+12554144
+Error found on line 2
+Expected '='
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o lex.o lex.c
+cc    -c -o main.o main.c
+begin
+0
+end
+0
+;
+0
++
+0
+-
+0
+=
+0
+*
+0
+/
+0
+(
+786432
+)
+0
+int
+512
+TEST1	10Please Enter Filename: (automatic)
+^Z
+[3]+  Stopped                 make
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o main.o main.c
+begin
+end
+;
++
+-
+=
+*
+/
+(
+)
+int
+TEST1	10Please Enter Filename: (automatic)
+a z^Z
+[4]+  Stopped                 make
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ [K]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ [K]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o main.o main.c
+begin
+400
+end
+401
+;
+399
++
+350
+-
+350
+=
+352
+*
+351
+/
+351
+(
+201
+)
+202
+int
+10
+TEST1	10Please Enter Filename: (automatic)
+a ^Z
+[5]+  Stopped                 make
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o lex.o lex.c
+cc    -c -o main.o main.c
+TEST1	10Please Enter Filename: (automatic)
+a1.in
+
+Ival = 0
+begin
+400
+Ival = 6
+int
+37805984
+Error found on line 2
+Expected '='
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ [K]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ [K]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ [K]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o lex.o lex.c
+[01m[Klex.c:[m[K In function ‘[01m[Klookup[m[K’:
+[01m[Klex.c:97:41:[m[K [01;31m[Kerror: [m[K‘[01m[Ki[m[K’ undeclared (first use in this function)
+   97 |     printf("BEEG TEST = %s\n" , myTable[[01;31m[Ki[m[K].charValue);
+      |                                         [01;31m[K^[m[K
+[01m[Klex.c:97:41:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+make: *** [<builtin>: lex.o] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o lex.o lex.c
+TEST1	10Please Enter Filename: (automatic)
+a1.in
+
+BEEG TEST = begin
+Ival = 0
+begin
+400
+BEEG TEST = int
+Ival = 6
+int
+6393760
+Error found on line 2
+Expected '='
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make clean
+[?2004lrm *.o main
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+cc    -c -o lex.o lex.c
+cc    -c -o main.o main.c
+Please Enter Filename: (automatic)
+a1.in
+
+begin
+400
+end
+401
+;
+399
++
+350
+-
+350
+=
+352
+*
+34652064
+make: *** [Makefile:8: main] Segmentation fault
+make: *** Deleting file 'main'
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ [K]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make clean
+[?2004lrm *.o main
+rm: cannot remove 'main': No such file or directory
+make: *** [Makefile:10: clean] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+cc    -c -o lex.o lex.c
+cc    -c -o main.o main.c
+Please Enter Filename: (automatic)
+a1.in
+
+begin
+400
+end
+401
+;
+399
++
+350
+-
+350
+=
+352
+*
+351
+/
+351
+(
+201
+)
+202
+int
+10
+begin
+400
+end
+401
+;
+399
++
+350
+-
+350
+=
+352
+*
+351
+/
+351
+(
+201
+)
+202
+int
+10
+Syntax Error found on line 2
+Expected Identifier
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make clean
+[?2004lrm *.o main
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+cc    -c -o lex.o lex.c
+cc    -c -o main.o main.c
+Please Enter Filename: (automatic)
+a1.in
+
+Ival = 0
+begin
+400
+Ival = 10
+int
+10
+Syntax Error found on line 2
+Expected Identifier
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make clean
+[?2004lrm *.o main
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+cc    -c -o lex.o lex.c
+cc    -c -o main.o main.c
+aPlease Enter Filename: (automatic)
+1.in
+
+begin 	int 	Syntax Error found on line 2
+Expected Identifier
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make lc[K[Kclean
+[?2004lrm *.o main
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+cc    -c -o lex.o lex.c
+cc    -c -o main.o main.c
+Please Enter Filename: (automatic)
+a1.in
+
+begin int Syntax Error found on line 2
+Expected Identifier
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make clean
+[?2004lrm *.o main
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+cc    -c -o lex.o lex.c
+cc    -c -o main.o main.c
+Please Enter Filename: (automatic)
+in  a1.in
+
+begin int TEST intSyntax Error found on line 2
+Expected Identifier
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+/usr/bin/ld: pars.o: in function `assignStmt':
+pars.c:(.text+0x304): undefined reference to `intMatch'
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:7: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make clean
+[?2004lrm *.o main
+rm: cannot remove 'main': No such file or directory
+make: *** [Makefile:10: clean] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+[01m[Kpars.c:[m[K In function ‘[01m[KintMatch[m[K’:
+[01m[Kpars.c:105:24:[m[K [01;31m[Kerror: [m[K‘[01m[KINT[m[K’ undeclared (first use in this function)
+  105 |     while(lookAhead == [01;31m[KINT[m[K){
+      |                        [01;31m[K^~~[m[K
+[01m[Kpars.c:105:24:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+make: *** [<builtin>: pars.o] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+cc    -c -o lex.o lex.c
+cc    -c -o main.o main.c
+Please Enter Filename: (automatic)
+a1.in
+
+make: *** [Makefile:8: main] Segmentation fault
+make: *** Deleting file 'main'
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+Please Enter Filename: (automatic)
+a1.in
+
+begin int 0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+make: *** [Makefile:8: main] Segmentation fault
+make: *** Deleting file 'main'
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+Please Enter Filename: (automatic)
+a1.in
+
+begin int 0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+make: *** [Makefile:8: main] Segmentation fault
+make: *** Deleting file 'main'
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o lex.o lex.c
+Please Enter Filename: (automatic)
+a1.in
+
+begin int 0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+make: *** [Makefile:8: main] Segmentation fault
+make: *** Deleting file 'main'
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+[01m[Kpars.c:[m[K In function ‘[01m[KnewLookup[m[K’:
+[01m[Kpars.c:100:22:[m[K [01;31m[Kerror: [m[K‘[01m[KanEntry[m[K’ has no member named ‘[01m[KValue[m[K’
+  100 |     }while(myTable[i][01;31m[K.[m[KValue != 0);
+      |                      [01;31m[K^[m[K
+make: *** [<builtin>: pars.o] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+Please Enter Filename: (automatic)
+a1.in
+
+begin int 0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+make: *** [Makefile:8: main] Segmentation fault
+make: *** Deleting file 'main'
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+Please Enter Filename: (automatic)
+a1i l .in
+
+begin int 0
+400
+1
+401
+2
+399
+3
+350
+4
+350
+5
+352
+6
+351
+7
+351
+8
+201
+9
+202
+10
+10
+make: *** [Makefile:8: main] Segmentation fault
+make: *** Deleting file 'main'
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+Please Enter Filename: (automatic)
+a1.in
+
+begin int 0
+400
+1
+401
+2
+399
+3
+350
+4
+350
+5
+352
+6
+351
+7
+351
+8
+201
+9
+202
+10
+10
+make: *** [Makefile:8: main] Segmentation fault
+make: *** Deleting file 'main'
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+Please Enter Filename: (automatic)
+a1.in
+
+begin int 0
+400
+1
+401
+2
+399
+3
+350
+4
+350
+5
+352
+6
+351
+7
+351
+8
+201
+9
+202
+10
+10
+11
+make: *** [Makefile:8: main] Segmentation fault
+make: *** Deleting file 'main'
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make clean
+[?2004lrm *.o main
+rm: cannot remove 'main': No such file or directory
+make: *** [Makefile:10: clean] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+cc    -c -o lex.o lex.c
+cc    -c -o main.o main.c
+Please Enter Filename: (automatic)
+1 a1.in
+
+begin int 0
+400
+1
+401
+2
+399
+3
+350
+4
+350
+5
+352
+6
+351
+7
+351
+8
+201
+9
+202
+10
+10
+11
+make: *** [Makefile:8: main] Segmentation fault
+make: *** Deleting file 'main'
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o lex.o lex.c
+Please Enter Filename: (automatic)
+a1.in
+
+begin int 0
+400
+1
+401
+2
+399
+3
+350
+4
+350
+5
+352
+6
+351
+7
+351
+8
+201
+9
+202
+10
+10
+11
+make: *** [Makefile:8: main] Segmentation fault
+make: *** Deleting file 'main'
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+Please Enter Filename: (automatic)
+a1.in
+
+begin int 0
+400
+1
+401
+2
+399
+3
+350
+4
+350
+5
+352
+6
+351
+7
+351
+8
+201
+9
+202
+FINAL 0Syntax Error found on line 2
+Expected Identifier
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make clean
+[?2004lrm *.o main
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+cc    -c -o lex.o lex.c
+cc    -c -o main.o main.c
+Please Enter Filename: (automatic)
+a1.in
+
+begin int FINAL 0Syntax Error found on line 2
+Expected Identifier
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+Please Enter Filename: (automatic)
+a1.in
+
+begin int FINAL 0Syntax Error found on line 2
+Expected Identifier
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+[01m[Kpars.c:[m[K In function ‘[01m[KnewLookup[m[K’:
+[01m[Kpars.c:95:24:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 2 has type ‘[01m[Kchar *[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+   95 |         printf("TEST\t[01;35m[K%d[m[K\n", [32m[KmyTable[i].charValue[m[K);
+      |                       [01;35m[K~^[m[K     [32m[K~~~~~~~~~~~~~~~~~~~~[m[K
+      |                        [01;35m[K|[m[K               [32m[K|[m[K
+      |                        [01;35m[Kint[m[K             [32m[Kchar *[m[K
+      |                       [32m[K%s[m[K
+Please Enter Filename: (automatic)
+a make
+
+Couldn't open file: make
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+Please Enter Filename: (automatic)
+a1.in
+
+begin int TEST	begin
+TEST	end
+TEST	;
+TEST	+
+TEST	-
+TEST	=
+TEST	*
+TEST	/
+TEST	(
+TEST	)
+FINAL 0Syntax Error found on line 2
+Expected Identifier
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+Please Enter Filename: (automatic)
+a1.in
+
+begin int TEST	begin	7
+TEST	end	4
+TEST	;	46
+TEST	+	62
+TEST	-	60
+TEST	=	44
+TEST	*	63
+TEST	/	58
+TEST	(	65
+TEST	)	64
+FINAL 0Syntax Error found on line 2
+Expected Identifier
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+Please Enter Filename: (automatic)
+1 a1.in
+
+begin int TEST	begin	7
+TEST	end	4
+TEST	;	46
+TEST	+	62
+TEST	-	60
+TEST	=	44
+TEST	*	63
+TEST	/	58
+TEST	(	65
+TEST	)	64
+FINAL 0
+Syntax Error found on line 2
+Expected Identifier
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o lex.o lex.c
+Please Enter Filename: (automatic)
+a1.in
+
+TEST	begin	7
+TEST	end	4
+TEST	;	46
+TEST	+	62
+TEST	-	60
+TEST	=	44
+TEST	*	63
+TEST	/	58
+TEST	(	65
+TEST	)	64
+FINAL 0
+Syntax Error found on line 2
+Expected Identifier
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+Please Enter Filename: (automatic)
+a1.in
+
+TEST	begin	7
+TEST	end	4
+TEST	;	46
+TEST	+	62
+TEST	-	60
+TEST	=	44
+TEST	*	63
+TEST	/	58
+TEST	(	65
+TEST	)	64
+TEST	int	0
+FINAL 1
+Syntax Error found on line 2
+Expected Identifier
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+Please Enter Filename: (automatic)
+a1.in
+
+FINAL 1
+Syntax Error found on line 2
+Expected Identifier
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+[01m[Kpars.c:[m[K In function ‘[01m[KintMatch[m[K’:
+[01m[Kpars.c:109:15:[m[K [01;31m[Kerror: [m[K‘[01m[KINT[m[K’ undeclared (first use in this function)
+  109 |         match([01;31m[KINT[m[K);
+      |               [01;31m[K^~~[m[K
+[01m[Kpars.c:109:15:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+make: *** [<builtin>: pars.o] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+Please Enter Filename: (automatic)
+a1.in
+
+Syntax Error found on line 2
+Expected Identifier
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+[01m[Kpars.c:[m[K In function ‘[01m[KassignStmt[m[K’:
+[01m[Kpars.c:118:30:[m[K [01;31m[Kerror: [m[Kexpected expression before ‘[01m[K|[m[K’ token
+  118 |     if(lookAhead == INT_VAL){[01;31m[K|[m[K
+      |                              [01;31m[K^[m[K
+make: *** [<builtin>: pars.o] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+Please Enter Filename: (automatic)
+a1.in
+
+TEST intSyntax Error found on line 2
+Expected Identifier
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+Please Enter Filename: (automatic)
+a1.in
+
+TESTSyntax Error found on line 2
+Expected Identifier
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+[01m[Kpars.c:[m[K In function ‘[01m[KintMatch[m[K’:
+[01m[Kpars.c:110:16:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Kprintf[m[K’ makes pointer from integer without a cast [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wint-conversion-Wint-conversion]8;;[m[K]
+  110 |         printf([01;35m[KlookAhead[m[K);
+      |                [01;35m[K^~~~~~~~~[m[K
+      |                [01;35m[K|[m[K
+      |                [01;35m[Kint[m[K
+In file included from [01m[Klex.h:18[m[K,
+                 from [01m[Kpars.h:10[m[K,
+                 from [01m[Kpars.c:1[m[K:
+[01m[K/usr/include/stdio.h:356:43:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kconst char * restrict[m[K’ but argument is of type ‘[01m[Kint[m[K’
+  356 | extern int printf ([01;36m[Kconst char *__restrict __format[m[K, ...);
+      |                    [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[01m[Kpars.c:110:9:[m[K [01;35m[Kwarning: [m[Kformat not a string literal and no format arguments [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-security-Wformat-security]8;;[m[K]
+  110 |         [01;35m[Kprintf[m[K(lookAhead);
+      |         [01;35m[K^~~~~~[m[K
+Please Enter Filename: (automatic)
+^Z
+[6]+  Stopped                 make
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ a[Kmake
+[?2004lcc    -c -o pars.o pars.c
+Please Enter Filename: (automatic)
+a1.in
+
+300Syntax Error found on line 2
+Expected Identifier
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+Please Enter Filename: (automatic)
+a1
+
+Couldn't open file: a1
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ ma[K[Kmake clean
+[?2004lrm *.o main
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+cc    -c -o lex.o lex.c
+cc    -c -o main.o main.c
+aPlease Enter Filename: (automatic)
+1.i
+
+Couldn't open file: a1.i
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make clean
+[?2004lrm *.o main
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ ma[Kake
+[?2004lcc    -c -o pars.o pars.c
+cc    -c -o lex.o lex.c
+cc    -c -o main.o main.c
+aPlease Enter Filename: (automatic)
+1.in
+
+300TESTSyntax Error found on line 2
+Expected Identifier
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ majke[K[K[Kke
+[?2004lcc    -c -o pars.o pars.c
+Please Enter Filename: (automatic)
+a1.in
+
+300Syntax Error found on line 2
+Expected Identifier
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make clean
+[?2004lrm *.o main
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+cc    -c -o lex.o lex.c
+cc    -c -o main.o main.c
+Please Enter Filename: (automatic)
+a1.in
+
+300
+CIDLEX = a
+Syntax Error found on line 2
+Expected Identifier
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ makemake
+[?2004lmakemake: command not found
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+cc    -c -o main.o main.c
+[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:43:24:[m[K [01;31m[Kerror: [m[K‘[01m[KCOMMA[m[K’ undeclared (first use in this function)
+   43 |     myTable[12].type = [01;31m[KCOMMA[m[K;
+      |                        [01;31m[K^~~~~[m[K
+[01m[Kmain.c:43:24:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+make: *** [<builtin>: main.o] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make clean
+[?2004lrm *.o main
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+cc    -c -o lex.o lex.c
+cc    -c -o main.o main.c
+aPlease Enter Filename: (automatic)
+1.in
+
+300Syntax Error found on line 2
+Expected Identifier
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make clean
+[?2004lrm *.o main
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+cc    -c -o lex.o lex.c
+cc    -c -o main.o main.c
+Please Enter Filename: (automatic)
+a1.in
+
+300Syntax Error found on line 2
+Expected Identifier
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ [K]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ [K]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+Please Enter Filename: (automatic)
+a1.in
+
+300
+CIDLEX = a
+
+CIDLEX = int
+Syntax Error found on line 2
+Expected Identifier
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+Please Enter Filename: (automatic)
+a1.in
+
+300
+CIDLEX = a
+
+CIDLEX = int
+Syntax Error found on line 2
+Expected Identifier
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+Please Enter Filename: (automatic)
+a1.in
+
+300
+CIDLEX = a
+
+Before Comma: 399
+
+CIDLEX = int
+Syntax Error found on line 2
+Expected Identifier
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make clean
+[?2004lrm *.o main
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+cc    -c -o lex.o lex.c
+cc    -c -o main.o main.c
+Please Enter Filename: (automatic)
+a1.in
+
+300
+CIDLEX = a
+
+Before Comma: 399
+360
+CIDLEX = int
+Syntax Error found on line 2
+Expected Identifier
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make clean
+[?2004lrm *.o main
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+cc    -c -o lex.o lex.c
+cc    -c -o main.o main.c
+Please Enter Filename: (automatic)
+a1.in
+
+300Syntax Error found on line 2
+Expected Identifier
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+Please Enter Filename: (automatic)
+a1.in
+
+30010Syntax Error found on line 2
+Expected Identifier
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+Please Enter Filename: (automatic)
+a1.in
+
+300 10 Syntax Error found on line 2
+Expected Identifier
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make clean
+[?2004lrm *.o main
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+cc    -c -o lex.o lex.c
+cc    -c -o main.o main.c
+Please Enter Filename: (automatic)
+a1.in
+
+300 
+CIDLEX = a
+10 
+CIDLEX = int
+Syntax Error found on line 2
+Expected Identifier
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+[01m[Kpars.c:[m[K In function ‘[01m[KintMatch[m[K’:
+[01m[Kpars.c:120:20:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Kprintf[m[K’ makes pointer from integer without a cast [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wint-conversion-Wint-conversion]8;;[m[K]
+  120 |             printf([01;35m[KlookAhead[m[K);
+      |                    [01;35m[K^~~~~~~~~[m[K
+      |                    [01;35m[K|[m[K
+      |                    [01;35m[Kint[m[K
+In file included from [01m[Klex.h:18[m[K,
+                 from [01m[Kpars.h:10[m[K,
+                 from [01m[Kpars.c:1[m[K:
+[01m[K/usr/include/stdio.h:356:43:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kconst char * restrict[m[K’ but argument is of type ‘[01m[Kint[m[K’
+  356 | extern int printf ([01;36m[Kconst char *__restrict __format[m[K, ...);
+      |                    [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[01m[Kpars.c:120:13:[m[K [01;35m[Kwarning: [m[Kformat not a string literal and no format arguments [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-security-Wformat-security]8;;[m[K]
+  120 |             [01;35m[Kprintf[m[K(lookAhead);
+      |             [01;35m[K^~~~~~[m[K
+Please Enter Filename: (automatic)
+^Z
+[7]+  Stopped                 make
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+Please Enter Filename: (automatic)
+a1.in
+
+300 
+CIDLEX = a
+399 10 
+CIDLEX = int
+Syntax Error found on line 2
+Expected Identifier
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+Please Enter Filename: (automatic)
+a1.in
+
+300 
+CIDLEX = a
+LOOK2 = 399 10 
+CIDLEX = int
+Syntax Error found on line 2
+Expected Identifier
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+Please Enter Filename: (automatic)
+a1.in
+
+300 
+CIDLEX = a
+LOOK2 = 399
+10 
+CIDLEX = int
+Syntax Error found on line 2
+Expected Identifier
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+Please Enter Filename: (automatic)
+a1.in
+
+300 
+CIDLEX = a
+Error found on line 2
+Redefintion Error
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+Please Enter Filename: (automatic)
+a1.in
+
+300 
+CIDLEX = a
+LOOK2 = 399
+BEFORE SEMI 399
+10 
+CIDLEX = int
+Syntax Error found on line 2
+Expected Identifier
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+aPlease Enter Filename: (automatic)
+1.in
+
+300 
+CIDLEX = a
+LOOK2 = 399
+BEFORE SEMI 399
+TEST10 
+CIDLEX = int
+Syntax Error found on line 2
+Expected Identifier
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+Please Enter Filename: (automatic)
+a1.in
+
+300 
+CIDLEX = a
+LOOK2 = 399
+BEFORE SEMI 399
+TEST300 
+CIDLEX = b
+LOOK2 = 399
+BEFORE SEMI 399
+TESTPROGRAM LEGAL: SUCCESS
+
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lmake: 'main' is up to date.
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ a[Kmake clean
+[?2004lrm *.o main
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+cc    -c -o lex.o lex.c
+cc    -c -o main.o main.c
+Please Enter Filename: (automatic)
+a2.in
+
+300 
+CIDLEX = a_
+LOOK2 = 300
+300 
+CIDLEX = b
+LOOK2 = 399
+BEFORE SEMI 399
+Error found on line 3
+Identifiers Must Not Start or End With Underscore
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ ake[K[K[Kmake
+[?2004lmake: 'main' is up to date.
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ a[Kmake clean
+[?2004lrm *.o main
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+cc    -c -o lex.o lex.c
+cc    -c -o main.o main.c
+Please Enter Filename: (automatic)
+a3.in
+
+300 
+CIDLEX = a
+LOOK2 = 399
+BEFORE SEMI 399
+TEST300 
+CIDLEX = b
+LOOK2 = 399
+BEFORE SEMI 399
+TEST300 
+CIDLEX = c
+LOOK2 = 399
+BEFORE SEMI 399
+TEST300 
+CIDLEX = d
+LOOK2 = 399
+BEFORE SEMI 399
+TEST300 
+CIDLEX = e
+LOOK2 = 399
+BEFORE SEMI 399
+TEST300 
+CIDLEX = f
+LOOK2 = 399
+BEFORE SEMI 399
+TEST300 
+CIDLEX = ghijk
+LOOK2 = 399
+BEFORE SEMI 399
+TEST300 
+CIDLEX = hello
+LOOK2 = 399
+BEFORE SEMI 399
+TESTPROGRAM LEGAL: SUCCESS
+
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make clean
+[?2004lrm *.o main
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+cc    -c -o lex.o lex.c
+cc    -c -o main.o main.c
+Please Enter Filename: (automatic)
+a4.in
+
+300 
+CIDLEX = a
+LOOK2 = 300
+300 
+CIDLEX = b
+LOOK2 = 300
+300 
+CIDLEX = c
+LOOK2 = 300
+300 
+CIDLEX = hello
+LOOK2 = 399
+BEFORE SEMI 399
+TEST300 
+CIDLEX = b
+LOOK2 = 399
+BEFORE SEMI 399
+TESTPROGRAM LEGAL: SUCCESS
+
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+Please Enter Filename: (automatic)
+a1.in
+
+TEST	begin	-1
+TEST	end	-4
+TEST	;	38
+TEST	+	54
+TEST	-	52
+TEST	=	36
+TEST	*	55
+TEST	/	50
+TEST	(	57
+TEST	)	56
+TEST	int	-8
+TEST	a	0
+TEST	begin	-101
+TEST	end	-3
+TEST	;	39
+TEST	+	55
+TEST	-	53
+TEST	=	37
+TEST	*	56
+TEST	/	51
+TEST	(	58
+TEST	)	57
+TEST	int	-7
+TEST	b	0
+PROGRAM LEGAL: SUCCESS
+
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ +[K]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ +[Kmake
+[?2004lcc    -c -o pars.o pars.c
+[01m[Kpars.c:[m[K In function ‘[01m[KnewLookup[m[K’:
+[01m[Kpars.c:99:9:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kpritnf[m[K’; did you mean ‘[01m[Kprintf[m[K’? [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wimplicit-function-declaration-Wimplicit-function-declaration]8;;[m[K]
+   99 |         [01;35m[Kpritnf[m[K("%s\t" arr);
+      |         [01;35m[K^~~~~~[m[K
+      |         [32m[Kprintf[m[K
+[01m[Kpars.c:99:22:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Karr[m[K’
+   99 |         pritnf[34m[K([m[K"%s\t"[01;31m[K [m[K[32m[Karr[m[K);
+      |               [34m[K~[m[K      [01;31m[K^[m[K[32m[K~~~[m[K
+      |                      [32m[K)[m[K
+make: *** [<builtin>: pars.o] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ a[Kmaked
+[?2004lCommand 'maked' not found, did you mean:
+  command 'makedb' from deb libnss-db (2.2.3pre1-6ubuntu3)
+  command 'marked' from deb node-marked (4.0.12+ds+~4.0.1-2ubuntu2)
+  command 'make' from deb make (4.3-4.1build1)
+  command 'make' from deb make-guile (4.3-4.1build1)
+  command 'makeg' from deb xutils-dev (1:7.7+6ubuntu1)
+Try: sudo apt install <deb name>
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+[01m[Kpars.c:[m[K In function ‘[01m[KnewLookup[m[K’:
+[01m[Kpars.c:99:9:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kpritnf[m[K’; did you mean ‘[01m[Kprintf[m[K’? [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wimplicit-function-declaration-Wimplicit-function-declaration]8;;[m[K]
+   99 |         [01;35m[Kpritnf[m[K("%s\t" , arr);
+      |         [01;35m[K^~~~~~[m[K
+      |         [32m[Kprintf[m[K
+/usr/bin/ld: pars.o: in function `newLookup':
+pars.c:(.text+0x361): undefined reference to `pritnf'
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:7: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+Please Enter Filename: (automatic)
+a1
+
+Couldn't open file: a1
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make clean
+[?2004lrm *.o main
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+cc    -c -o lex.o lex.c
+cc    -c -o main.o main.c
+aPlease Enter Filename: (automatic)
+1.in
+
+TEST	begin	a	-1
+TEST	end	a	-4
+TEST	;	a	38
+TEST	+	a	54
+TEST	-	a	52
+TEST	=	a	36
+TEST	*	a	55
+TEST	/	a	50
+TEST	(	a	57
+TEST	)	a	56
+TEST	int	a	-8
+TEST	a	a	0
+TEST	begin	b	-101
+TEST	end	b	-3
+TEST	;	b	39
+TEST	+	b	55
+TEST	-	b	53
+TEST	=	b	37
+TEST	*	b	56
+TEST	/	b	51
+TEST	(	b	58
+TEST	)	b	57
+TEST	int	b	-7
+TEST	b	b	0
+PROGRAM LEGAL: SUCCESS
+
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+Please Enter Filename: (automatic)
+a1.in
+
+300 
+CIDLEX = a
+TEST	begin	a	-1
+TEST	end	a	-4
+TEST	;	a	38
+TEST	+	a	54
+TEST	-	a	52
+TEST	=	a	36
+TEST	*	a	55
+TEST	/	a	50
+TEST	(	a	57
+TEST	)	a	56
+TEST	int	a	-8
+TEST	a	a	0
+300 
+CIDLEX = b
+TEST	begin	b	-101
+TEST	end	b	-3
+TEST	;	b	39
+TEST	+	b	55
+TEST	-	b	53
+TEST	=	b	37
+TEST	*	b	56
+TEST	/	b	51
+TEST	(	b	58
+TEST	)	b	57
+TEST	int	b	-7
+TEST	b	b	0
+PROGRAM LEGAL: SUCCESS
+
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+Please Enter Filename: (automatic)
+a1.in
+
+
+CIDLEX-T = int
+300 
+CIDLEX = a
+TEST	begin	a	-1
+TEST	end	a	-4
+TEST	;	a	38
+TEST	+	a	54
+TEST	-	a	52
+TEST	=	a	36
+TEST	*	a	55
+TEST	/	a	50
+TEST	(	a	57
+TEST	)	a	56
+TEST	int	a	-8
+TEST	a	a	0
+
+CIDLEX-T = int
+300 
+CIDLEX = b
+TEST	begin	b	-101
+TEST	end	b	-3
+TEST	;	b	39
+TEST	+	b	55
+TEST	-	b	53
+TEST	=	b	37
+TEST	*	b	56
+TEST	/	b	51
+TEST	(	b	58
+TEST	)	b	57
+TEST	int	b	-7
+TEST	b	b	0
+PROGRAM LEGAL: SUCCESS
+
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o lex.o lex.c
+Please Enter Filename: (automatic)
+a1.in
+
+TEST	begin	begin	0
+TEST	begin	int	7
+TEST	end	int	4
+TEST	;	int	46
+TEST	+	int	62
+TEST	-	int	60
+TEST	=	int	44
+TEST	*	int	63
+TEST	/	int	58
+TEST	(	int	65
+TEST	)	int	64
+TEST	int	int	0
+
+CIDLEX-T = int
+TEST	begin	a	-1
+TEST	end	a	-4
+TEST	;	a	38
+TEST	+	a	54
+TEST	-	a	52
+TEST	=	a	36
+TEST	*	a	55
+TEST	/	a	50
+TEST	(	a	57
+TEST	)	a	56
+TEST	int	a	-8
+Error found on line 2
+Redefintion Error
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ vc[Kmak[K[K[K[Kmake
+[?2004lcc    -c -o main.o main.c
+Please Enter Filename: (automatic)
+a1.in
+
+TEST	begin	begin	0
+TEST	begin	int	7
+TEST	end	int	4
+TEST	;	int	46
+TEST	+	int	62
+TEST	-	int	60
+TEST	=	int	44
+TEST	*	int	63
+TEST	/	int	58
+TEST	(	int	65
+TEST	)	int	64
+TEST	int	int	0
+
+CIDLEX-T = int
+TEST	begin	a	-1
+TEST	end	a	-4
+TEST	;	a	38
+TEST	+	a	54
+TEST	-	a	52
+TEST	=	a	36
+TEST	*	a	55
+TEST	/	a	50
+TEST	(	a	57
+TEST	)	a	56
+TEST	int	a	-8
+Error found on line 2
+Redefintion Error
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make[K[K[K[Kmake
+[?2004lcc    -c -o lex.o lex.c
+Please Enter Filename: (automatic)
+a1.in
+
+TEST	begin	begin	0
+TEST	begin	int	7
+TEST	end	int	4
+TEST	;	int	46
+TEST	+	int	62
+TEST	-	int	60
+TEST	=	int	44
+TEST	*	int	63
+TEST	/	int	58
+TEST	(	int	65
+TEST	)	int	64
+TEST	int	int	0
+
+CIDLEX-T = int
+TEST	begin	a	-1
+TEST	end	a	-4
+TEST	;	a	38
+TEST	+	a	54
+TEST	-	a	52
+TEST	=	a	36
+TEST	*	a	55
+TEST	/	a	50
+TEST	(	a	57
+TEST	)	a	56
+TEST	int	a	-8
+Error found on line 2
+Redefintion Error
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o lex.o lex.c
+Please Enter Filename: (automatic)
+a` 1.in
+
+TEST	begin	begin	0
+TEST	begin	int	7
+TEST	end	int	4
+TEST	;	int	46
+TEST	+	int	62
+TEST	-	int	60
+TEST	=	int	44
+TEST	*	int	63
+TEST	/	int	58
+TEST	(	int	65
+TEST	)	int	64
+TEST	int	int	0
+
+CIDLEX-T = int
+TEST	begin	a	-1
+TEST	end	a	-4
+TEST	;	a	38
+TEST	+	a	54
+TEST	-	a	52
+TEST	=	a	36
+TEST	*	a	55
+TEST	/	a	50
+TEST	(	a	57
+TEST	)	a	56
+TEST	int	a	-8
+CHECK HEREa
+Error found on line 2
+Redefintion Error
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o lex.o lex.c
+Please Enter Filename: (automatic)
+^[[A^[[A^[[B^[[B                a1.in
+
+begin TEST	begin	begin	0
+int TEST	begin	int	7
+TEST	end	int	4
+TEST	;	int	46
+TEST	+	int	62
+TEST	-	int	60
+TEST	=	int	44
+TEST	*	int	63
+TEST	/	int	58
+TEST	(	int	65
+TEST	)	int	64
+TEST	int	int	0
+
+CIDLEX-T = int
+a TEST	begin	a	-1
+TEST	end	a	-4
+TEST	;	a	38
+TEST	+	a	54
+TEST	-	a	52
+TEST	=	a	36
+TEST	*	a	55
+TEST	/	a	50
+TEST	(	a	57
+TEST	)	a	56
+TEST	int	a	-8
+CHECK HEREa
+Error found on line 2
+Redefintion Error
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+Please Enter Filename: (automatic)
+a1.in
+
+begin int 
+CIDLEX-T = int
+a CHECK HEREa
+Error found on line 2
+Redefintion Error
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+Please Enter Filename: (automatic)
+a1.in
+
+begin int a CHECK HEREa
+Error found on line 2
+Redefintion Error
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ mk[Kake1![K[K[K'[Kw[K[K[K[Kmake clean[K
+[?2004lcc    -c -o lex.o lex.c
+Please Enter Filename: (automatic)
+a1.in
+
+begin CHECK HEREbegin
+Error found on line 1
+Redefintion Error
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+Please Enter Filename: (automatic)
+a1.in
+
+make: *** [Makefile:8: main] Segmentation fault
+make: *** Deleting file 'main'
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+Please Enter Filename: (automatic)
+a1.in
+
+make: *** [Makefile:8: main] Segmentation fault
+make: *** Deleting file 'main'
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+Please Enter Filename: (automatic)
+a1.in
+
+begin int CHECK HEREint
+Error found on line 2
+Redefintion Error
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o main.o main.c
+begin
+0
+end
+0
+;
+0
++
+0
+-
+0
+=
+0
+*
+786432
+/
+0
+(
+512
+)
+64
+int
+3456
+,
+5146624
+make: *** [Makefile:8: main] Segmentation fault
+make: *** Deleting file 'main'
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o main.o main.c
+begin
+400
+end
+401
+;
+399
++
+350
+-
+350
+=
+352
+*
+351
+/
+351
+(
+201
+)
+202
+int
+10
+Please Enter Filename: (automatic)
+^Z
+[8]+  Stopped                 make
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o main.o main.c
+begin
+400
+end
+401
+;
+399
++
+350
+-
+350
+=
+352
+*
+351
+/
+351
+(
+201
+)
+202
+int
+10
+,
+-1
+make: *** [Makefile:8: main] Segmentation fault
+make: *** Deleting file 'main'
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ ma[K[Kmake clean
+[?2004lrm *.o main
+rm: cannot remove 'main': No such file or directory
+make: *** [Makefile:10: clean] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make clean[K
+[?2004lcc    -c -o pars.o pars.c
+cc    -c -o lex.o lex.c
+cc    -c -o main.o main.c
+begin
+400
+end
+401
+;
+399
++
+350
+-
+350
+=
+352
+*
+351
+/
+351
+(
+201
+)
+202
+int
+10
+,
+-1
+make: *** [Makefile:8: main] Segmentation fault
+make: *** Deleting file 'main'
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o main.o main.c
+begin
+400
+end
+401
+;
+399
++
+350
+-
+350
+=
+352
+*
+351
+/
+351
+(
+201
+)
+202
+int
+10
+,
+360
+Z-@
+-1
+Please Enter Filename: (automatic)
+a1.in
+
+begin int CHECK HEREint
+Error found on line 2
+Redefintion Error
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+begin
+400
+end
+401
+;
+399
++
+350
+-
+350
+=
+352
+*
+351
+/
+351
+(
+201
+)
+202
+int
+10
+,
+360
+Z-@
+-1
+Please Enter Filename: (automatic)
+a1.in
+
+make: *** [Makefile:8: main] Segmentation fault
+make: *** Deleting file 'main'
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+begin
+400
+end
+401
+;
+399
++
+350
+-
+350
+=
+352
+*
+351
+/
+351
+(
+201
+)
+202
+int
+10
+,
+360
+Z-@
+-1
+Please Enter Filename: (automatic)
+a1.in
+
+begin int a int CHECK HEREint
+Error found on line 2
+Redefintion Error
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+[01m[Kpars.c:[m[K In function ‘[01m[KnewLookup[m[K’:
+[01m[Kpars.c:97:22:[m[K [01;31m[Kerror: [m[Kexpected expression before ‘[01m[K|[m[K’ token
+   97 |     if(arr != "int"){[01;31m[K|[m[K
+      |                      [01;31m[K^[m[K
+make: *** [<builtin>: pars.o] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+begin
+400
+end
+401
+;
+399
++
+350
+-
+350
+=
+352
+*
+351
+/
+351
+(
+201
+)
+202
+int
+10
+,
+360
+j-@
+-1
+Please Enter Filename: (automatic)
+a1.in
+
+begin int a int CHECK HEREint
+Error found on line 2
+Redefintion Error
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+begin
+400
+end
+401
+;
+399
++
+350
+-
+350
+=
+352
+*
+351
+/
+351
+(
+201
+)
+202
+int
+10
+,
+360
+z-@
+-1
+Please Enter Filename: (automatic)
+a1.in
+
+begin int a Error found on line 2
+Redefintion Error
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+begin
+400
+end
+401
+;
+399
++
+350
+-
+350
+=
+352
+*
+351
+/
+351
+(
+201
+)
+202
+int
+10
+,
+360
+*-@
+-1
+Please Enter Filename: (automatic)
+a1.i n
+
+Couldn't open file: a1.n
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make clean
+[?2004lrm *.o main
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+cc    -c -o lex.o lex.c
+cc    -c -o main.o main.c
+begin
+400
+end
+401
+;
+399
++
+350
+-
+350
+=
+352
+*
+351
+/
+351
+(
+201
+)
+202
+int
+10
+,
+360
+*-@
+-1
+Please Enter Filename: (automatic)
+a1.in
+
+begin int a int CHECK HEREint
+Error found on line 2
+Redefintion Error
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+cc    -c -o lex.o lex.c
+begin
+400
+end
+401
+;
+399
++
+350
+-
+350
+=
+352
+*
+351
+/
+351
+(
+201
+)
+202
+int
+10
+,
+360
+�-@
+-1
+Please Enter Filename: (automatic)
+aq 1.in
+
+begin int TEST	,	int	61
+a int TEST	,	int	61
+TEST	int	int	0
+Error found on line 2
+Redefintion Error
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make clean
+[?2004lrm *.o main
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make clean[K
+[?2004lcc    -c -o pars.o pars.c
+cc    -c -o lex.o lex.c
+cc    -c -o main.o main.c
+Please Enter Filename: (automatic)
+a1.in
+
+begin int TEST	,	int	61	360
+a int TEST	,	int	61	360
+TEST	int	int	0	Error found on line 2
+Redefintion Error
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+cc    -c -o lex.o lex.c
+Please Enter Filename: (automatic)
+a1.in
+
+TEST	,	int	61
+360
+TEST	,	int	61
+360
+TEST	int	int	0
+Error found on line 2
+Redefintion Error
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+Please Enter Filename: (automatic)
+a1.in
+
+TEST	,	begin	54
+TEST	,	int	61
+TEST	,	int	61
+360
+TEST	,	a	53
+TEST	,	int	61
+TEST	,	int	61
+360
+TEST	int	int	0
+Error found on line 2
+Redefintion Error
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+Please Enter Filename: (automatic)
+a1.in
+
+TEST1	,	begin	54
+
+TEST1	,	int	61
+
+TEST2	,	int	61
+360
+TEST1	,	a	53
+
+TEST1	,	int	61
+
+TEST2	,	int	61
+360
+TEST2	int	int	0
+Error found on line 2
+Redefintion Error
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ [K]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+[01m[Kpars.c:108:5:[m[K [01;31m[Kerror: [m[Kexpected identifier or ‘[01m[K([m[K’ before ‘[01m[Kreturn[m[K’
+  108 |     [01;31m[Kreturn[m[K 0;
+      |     [01;31m[K^~~~~~[m[K
+[01m[Kpars.c:109:1:[m[K [01;31m[Kerror: [m[Kexpected identifier or ‘[01m[K([m[K’ before ‘[01m[K}[m[K’ token
+  109 | [01;31m[K}[m[K
+      | [01;31m[K^[m[K
+make: *** [<builtin>: pars.o] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+[01m[Kpars.c:108:5:[m[K [01;31m[Kerror: [m[Kexpected identifier or ‘[01m[K([m[K’ before ‘[01m[Kreturn[m[K’
+  108 |     [01;31m[Kreturn[m[K 0;
+      |     [01;31m[K^~~~~~[m[K
+[01m[Kpars.c:109:1:[m[K [01;31m[Kerror: [m[Kexpected identifier or ‘[01m[K([m[K’ before ‘[01m[K}[m[K’ token
+  109 | [01;31m[K}[m[K
+      | [01;31m[K^[m[K
+make: *** [<builtin>: pars.o] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+Please Enter Filename: (automatic)
+a1.in
+
+TEST2	int	int	0
+Error found on line 2
+Redefintion Error
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+Please Enter Filename: (automatic)
+a1.in
+
+TESTTESTTESTTEST2	int	int	0
+Error found on line 2
+Redefintion Error
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+Please Enter Filename: (automatic)
+a1.in
+
+TEST2	�-@	begin	-40
+TEST2	�-@	int	-33
+TEST2	�-@	a	-41
+TEST	int	int	0
+Error found on line 2
+Redefintion Error
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+Please Enter Filename: (automatic)
+a1.in
+
+TEST2	�-@	begin	-40
+TEST2	�-@	int	-33
+TEST2	�-@	a	-41
+TEST	int	int	0
+Error found on line 2
+Redefintion Error
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+[01m[Kpars.c:[m[K In function ‘[01m[KnewLookup[m[K’:
+[01m[Kpars.c:98:23:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects a matching ‘[01m[Kint[m[K’ argument [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+   98 |     printf("\nIVAL = [01;35m[K%d[m[K\n");
+      |                      [01;35m[K~^[m[K
+      |                       [01;35m[K|[m[K
+      |                       [01;35m[Kint[m[K
+Please Enter Filename: (automatic)
+make
+
+Couldn't open file: make
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ 
+[?2004l[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+Please Enter Filename: (automatic)
+a1.in
+
+
+IVAL = 12
+TEST2	�-@	begin	-72
+
+IVAL = 12
+TEST2	�-@	int	-65
+
+IVAL = 12
+TEST2	�-@	a	-73
+
+IVAL = 12
+TEST	int	int	0
+Error found on line 2
+Redefintion Error
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+cc    -c -o lex.o lex.c
+Please Enter Filename: (automatic)
+a1.in
+
+
+IVAL = 12
+TEST2	�-@	begin	-72
+
+IVAL = 12
+TEST2	�-@	int	-65
+
+IVAL = 12
+TEST2	�-@	a	-73
+
+IVAL = 13
+make: *** [Makefile:8: main] Segmentation fault
+make: *** Deleting file 'main'
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o lex.o lex.c
+Please Enter Filename: (automatic)
+a1.in
+
+
+IVAL = 12
+TEST2	.@	begin	72
+Ival = 0
+begin
+400
+
+IVAL = 12
+TEST2	.@	int	79
+Ival = 10
+int
+10
+
+IVAL = 12
+TEST2	.@	a	71
+
+IVAL = 13
+make: *** [Makefile:8: main] Segmentation fault
+make: *** Deleting file 'main'
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o lex.o lex.c
+[01m[Klex.c:[m[K In function ‘[01m[Klookup[m[K’:
+[01m[Klex.c:122:43:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Karr[m[K’
+  122 |     printf[34m[K([m[K"\n***\n'%s' inserted at slot "[01;31m[K [m[K[32m[Karr[m[K);
+      |           [34m[K~[m[K                               [01;31m[K^[m[K[32m[K~~~[m[K
+      |                                           [32m[K)[m[K
+[01m[Klex.c:122:22:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%s[m[K’ expects a matching ‘[01m[Kchar *[m[K’ argument [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  122 |     printf("\n***\n'[01;35m[K%s[m[K' inserted at slot " arr);
+      |                     [01;35m[K~^[m[K
+      |                      [01;35m[K|[m[K
+      |                      [01;35m[Kchar *[m[K
+[01m[Klex.c:123:27:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[KiValue[m[K’
+  123 |     printf("%d\n***\n", i)
+      |                           [01;31m[K^[m[K
+      |                           [32m[K;[m[K
+  124 |     [32m[KiValue[m[K++;
+      |     [32m[K~~~~~~[m[K                 
+make: *** [<builtin>: lex.o] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o lex.o lex.c
+[01m[Klex.c:[m[K In function ‘[01m[Klookup[m[K’:
+[01m[Klex.c:122:43:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Karr[m[K’
+  122 |     printf[34m[K([m[K"\n***\n'%s' inserted at slot "[01;31m[K [m[K[32m[Karr[m[K);
+      |           [34m[K~[m[K                               [01;31m[K^[m[K[32m[K~~~[m[K
+      |                                           [32m[K)[m[K
+[01m[Klex.c:122:22:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%s[m[K’ expects a matching ‘[01m[Kchar *[m[K’ argument [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  122 |     printf("\n***\n'[01;35m[K%s[m[K' inserted at slot " arr);
+      |                     [01;35m[K~^[m[K
+      |                      [01;35m[K|[m[K
+      |                      [01;35m[Kchar *[m[K
+make: *** [<builtin>: lex.o] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ a[Kmake
+[?2004lcc    -c -o lex.o lex.c
+Please Enter Filename: (automatic)
+a1.in
+
+
+IVAL = 12
+TEST2	�-@	begin	-136
+
+IVAL = 12
+TEST2	�-@	int	-129
+
+IVAL = 12
+TEST2	�-@	a	-137
+
+***
+'a' inserted at slot 12
+***
+
+IVAL = 13
+make: *** [Makefile:8: main] Segmentation fault
+make: *** Deleting file 'main'
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o lex.o lex.c
+Please Enter Filename: (automatic)
+a1.in
+
+
+IVAL = 12
+TEST2	
+.@	begin	88
+
+IVAL = 12
+TEST2	
+.@	int	95
+
+IVAL = 12
+TEST2	
+.@	a	87
+
+***
+'a' inserted at slot a
+12
+***
+
+IVAL = 13
+make: *** [Makefile:8: main] Segmentation fault
+make: *** Deleting file 'main'
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o lex.o lex.c
+Please Enter Filename: (automatic)
+a1.in
+
+
+IVAL = 12
+TEST2	�-@	begin	-136
+
+IVAL = 12
+TEST2	�-@	int	-129
+
+IVAL = 12
+TEST2	�-@	a	-137
+
+***
+'a' inserted at slot 12
+***
+
+IVAL = 13
+make: *** [Makefile:8: main] Segmentation fault
+make: *** Deleting file 'main'
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o lex.o lex.c
+Please Enter Filename: (automatic)
+a1.in
+
+
+IVAL = 12
+TEST2	
+.@	begin	88
+
+IVAL = 12
+TEST2	
+.@	int	95
+
+IVAL = 12
+TEST2	
+.@	a	87
+
+***
+make: *** [Makefile:8: main] Segmentation fault
+make: *** Deleting file 'main'
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o lex.o lex.c
+[01m[Klex.c:[m[K In function ‘[01m[Klookup[m[K’:
+[01m[Klex.c:123:14:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%s[m[K’ expects argument of type ‘[01m[Kchar *[m[K’, but argument 2 has type ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  123 |     printf("[01;35m[K%s[m[K\n", [32m[KmyTable[i+1].type[m[K);
+      |             [01;35m[K~^[m[K     [32m[K~~~~~~~~~~~~~~~~~[m[K
+      |              [01;35m[K|[m[K                 [32m[K|[m[K
+      |              [01;35m[Kchar *[m[K            [32m[Kint[m[K
+      |             [32m[K%d[m[K
+Please Enter Filename: (automatic)
+a ^Z
+[9]+  Stopped                 make
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o lex.o lex.c
+Please Enter Filename: (automatic)
+a1.in
+
+
+IVAL = 12
+TEST2	.@	begin	72
+
+IVAL = 12
+TEST2	.@	int	79
+
+IVAL = 12
+TEST2	.@	a	71
+
+***
+'a' inserted at slot -1
+12
+***
+
+IVAL = 13
+make: *** [Makefile:8: main] Segmentation fault
+make: *** Deleting file 'main'
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ makje[K[Ke
+[?2004lcc    -c -o lex.o lex.c
+Please Enter Filename: (automatic)
+a1.in
+
+
+IVAL = 12
+TEST2	.@	begin	72
+
+IVAL = 12
+TEST2	.@	int	79
+
+IVAL = 12
+TEST2	.@	a	71
+
+***
+'a' inserted at slot -1
+13
+***
+
+IVAL = 13
+make: *** [Makefile:8: main] Segmentation fault
+make: *** Deleting file 'main'
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$  a[K[Kmake
+[?2004lcc    -c -o pars.o pars.c
+[01m[Kpars.c:[m[K In function ‘[01m[KnewLookup[m[K’:
+[01m[Kpars.c:99:22:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Kprintf[m[K’ makes pointer from integer without a cast [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wint-conversion-Wint-conversion]8;;[m[K]
+   99 |     printf([01;35m[KmyTable[i].type[m[K);
+      |            [01;35m[K~~~~~~~~~~^~~~~[m[K
+      |                      [01;35m[K|[m[K
+      |                      [01;35m[Kint[m[K
+In file included from [01m[Klex.h:18[m[K,
+                 from [01m[Kpars.h:10[m[K,
+                 from [01m[Kpars.c:1[m[K:
+[01m[K/usr/include/stdio.h:356:43:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kconst char * restrict[m[K’ but argument is of type ‘[01m[Kint[m[K’
+  356 | extern int printf ([01;36m[Kconst char *__restrict __format[m[K, ...);
+      |                    [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[01m[Kpars.c:99:5:[m[K [01;35m[Kwarning: [m[Kformat not a string literal and no format arguments [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-security-Wformat-security]8;;[m[K]
+   99 |     [01;35m[Kprintf[m[K(myTable[i].type);
+      |     [01;35m[K^~~~~~[m[K
+Please Enter Filename: (automatic)
+a ^Z
+[10]+  Stopped                 make
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ makej
+[?2004lCommand 'makej' not found, did you mean:
+  command 'makeg' from deb xutils-dev (1:7.7+6ubuntu1)
+  command 'make' from deb make (4.3-4.1build1)
+  command 'make' from deb make-guile (4.3-4.1build1)
+Try: sudo apt install <deb name>
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+Please Enter Filename: (automatic)
+a1.in
+
+
+IVAL = 12
+
+->NEWLOOKUP VAL -1
+TEST2	J.@	begin	24
+
+IVAL = 12
+
+->NEWLOOKUP VAL -1
+TEST2	J.@	int	31
+
+IVAL = 12
+
+->NEWLOOKUP VAL -1
+TEST2	J.@	a	23
+
+***
+'a' inserted at slot -1
+13
+***
+
+IVAL = 13
+
+->NEWLOOKUP VAL -1
+make: *** [Makefile:8: main] Segmentation fault
+make: *** Deleting file 'main'
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+Please Enter Filename: (automatic)
+a1.in
+
+
+IVAL = 12
+
+->NEWLOOKUP VAL -1
+
+IVAL = 12
+
+->NEWLOOKUP VAL -1
+
+IVAL = 12
+
+->NEWLOOKUP VAL -1
+
+***
+'a' inserted at slot -1
+13
+***
+
+IVAL = 13
+
+->NEWLOOKUP VAL -1
+
+IVAL = 13
+
+->NEWLOOKUP VAL -1
+
+IVAL = 13
+
+->NEWLOOKUP VAL -1
+
+IVAL = 13
+
+->NEWLOOKUP VAL -1
+
+***
+'b' inserted at slot -1
+14
+***
+
+IVAL = 14
+
+->NEWLOOKUP VAL -1
+
+IVAL = 14
+
+->NEWLOOKUP VAL -1
+
+IVAL = 14
+
+->NEWLOOKUP VAL -1
+PROGRAM LEGAL: SUCCESS
+
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+cc    -c -o lex.o lex.c
+Please Enter Filename: (automatic)
+a1.in
+
+PROGRAM LEGAL: SUCCESS
+
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+Please Enter Filename: (automatic)
+a1.in
+
+PROGRAM LEGAL: SUCCESS
+
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+Please Enter Filename: (automatic)
+a2.in
+
+Error found on line 3
+Identifiers Must Not Start or End With Underscore
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ mqk[K[Kake
+[?2004lmake: 'main' is up to date.
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ a3.in
+[?2004la3.in: command not found
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lmake: 'main' is up to date.
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make clean
+[?2004lrm *.o main
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+cc    -c -o lex.o lex.c
+cc    -c -o main.o main.c
+Please Enter Filename: (automatic)
+a3.in
+
+PROGRAM LEGAL: SUCCESS
+
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lmake: 'main' is up to date.
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make clean
+[?2004lrm *.o main
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+cc    -c -o lex.o lex.c
+cc    -c -o main.o main.c
+Please Enter Filename: (automatic)
+m a4.in
+
+PROGRAM LEGAL: SUCCESS
+
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+Please Enter Filename: (automatic)
+a1.in
+
+Error found on line 2
+Redefintion Error
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+Please Enter Filename: (automatic)
+a1.in
+
+make: *** [Makefile:8: main] Segmentation fault
+make: *** Deleting file 'main'
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+Please Enter Filename: (automatic)
+a1.in
+
+
+IVAL = 12
+
+->NEWLOOKUP VAL -1
+
+IVAL = 12
+
+->NEWLOOKUP VAL -1
+
+IVAL = 12
+
+->NEWLOOKUP VAL -1
+
+IVAL = 12
+
+->NEWLOOKUP VAL 300
+Error found on line 2
+Redefintion Error
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+Please Enter Filename: (automatic)
+a1.in
+
+Error found on line 2
+Redefintion Error
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+Please Enter Filename: (automatic)
+an 1.in
+
+
+IVAL = 12
+
+->NEWLOOKUP VAL -1
+
+IVAL = 12
+
+->NEWLOOKUP VAL -1
+
+IVAL = 12
+
+->NEWLOOKUP VAL -1
+
+IVAL = 12
+
+->NEWLOOKUP VAL 300
+Error found on line 2
+Redefintion Error
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+Please Enter Filename: (automatic)
+a1.in
+
+TEST	int	int	0
+Error found on line 2
+Redefintion Error
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+Please Enter Filename: (automatic)
+a1.in
+
+make: *** [Makefile:8: main] Segmentation fault
+make: *** Deleting file 'main'
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+Please Enter Filename: (automatic)
+a1.in
+
+
+IVAL = 12
+
+->NEWLOOKUP VAL -1
+
+IVAL = 12
+
+->NEWLOOKUP VAL -1
+
+IVAL = 12
+
+->NEWLOOKUP VAL -1
+
+IVAL = 12
+
+->NEWLOOKUP VAL 300
+TEST	int	int	0
+Error found on line 2
+Redefintion Error
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+cc    -c -o lex.o lex.c
+Please Enter Filename: (automatic)
+a1.in
+
+
+***
+'a' inserted at slot -1
+13
+***
+Error found on line 2
+Redefintion Error
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o lex.o lex.c
+Please Enter Filename: (automatic)
+a1.in
+
+
+***
+'a' inserted at slot 300
+13
+***
+Error found on line 2
+Redefintion Error
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+Please Enter Filename: (automatic)
+a1.in
+
+
+***
+'a' inserted at slot 300
+13
+***
+TEST	int	int	0
+Error found on line 2
+Redefintion Error
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ ;m[K[Kmake
+[?2004lcc    -c -o pars.o pars.c
+aPlease Enter Filename: (automatic)
+1.in
+
+
+***
+'a' inserted at slot 300
+13
+***
+VALUE RETURNEDint
+Error found on line 2
+Redefintion Error
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+[01m[Kpars.c:[m[K In function ‘[01m[KnewLookup[m[K’:
+[01m[Kpars.c:103:99:[m[K [01;31m[Kerror: [m[Kexpected statement before ‘[01m[K)[m[K’ token
+  103 |             if(strcmp(arr, myTable[i].charValue) == 0 && strcmp("int", myTable[i].charValue) == 0)[01;31m[K)[m[K{
+      |                                                                                                   [01;31m[K^[m[K
+make: *** [<builtin>: pars.o] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+Please Enter Filename: (automatic)
+a1.in
+
+
+***
+'a' inserted at slot 300
+13
+***
+VALUE RETURNEDint
+Error found on line 2
+Redefintion Error
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+Please Enter Filename: (automatic)
+a1.in
+
+
+***
+'a' inserted at slot 300
+13
+***
+TEST	int	int	0
+Error found on line 2
+Redefintion Error
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+Please Enter Filename: (automatic)
+a1.in
+
+
+***
+'a' inserted at slot 300
+13
+***
+TEST	int	int	0
+VALUE RETURNEDint
+Error found on line 2
+Redefintion Error
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+[01m[Kpars.c:[m[K In function ‘[01m[KnewLookup[m[K’:
+[01m[Kpars.c:103:26:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[KmyTable[m[K’
+  103 |             printf[34m[K([m[K"%d\n"[01;31m[K [m[K[32m[KmyTable[m[K[i].type);
+      |                   [34m[K~[m[K      [01;31m[K^[m[K[32m[K~~~~~~~[m[K
+      |                          [32m[K)[m[K
+[01m[Kpars.c:103:22:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects a matching ‘[01m[Kint[m[K’ argument [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  103 |             printf("[01;35m[K%d[m[K\n" myTable[i].type);
+      |                     [01;35m[K~^[m[K
+      |                      [01;35m[K|[m[K
+      |                      [01;35m[Kint[m[K
+make: *** [<builtin>: pars.o] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ a[Kmake
+[?2004lcc    -c -o pars.o pars.c
+Please Enter Filename: (automatic)
+a1.in
+
+
+***
+'a' inserted at slot 300
+13
+***
+TEST	int	int	0	300
+VALUE RETURNEDint
+Error found on line 2
+Redefintion Error
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o lex.o lex.c
+Please Enter Filename: (automatic)
+a1.in
+
+
+***
+'a' inserted at slot 300
+13
+***
+TEST	int	int	0	300
+VALUE RETURNEDint
+CHECK HEREint
+Error found on line 2
+Redefintion Error
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o lex.o lex.c
+Please Enter Filename: (automatic)
+a1.in
+
+begin int a 
+***
+'a' inserted at slot 300
+13
+***
+int TEST	int	int	0	300
+VALUE RETURNEDint
+Error found on line 2
+Redefintion Error
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o lex.o lex.c
+[01m[Klex.c:[m[K In function ‘[01m[Klexan[m[K’:
+[01m[Klex.c:90:25:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[KcurrentIDLexeme[m[K’
+   90 |             printf[34m[K([m[K"%s "[01;31m[K [m[K[32m[KcurrentIDLexeme[m[K);
+      |                   [34m[K~[m[K     [01;31m[K^[m[K[32m[K~~~~~~~~~~~~~~~[m[K
+      |                         [32m[K)[m[K
+[01m[Klex.c:90:22:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%s[m[K’ expects a matching ‘[01m[Kchar *[m[K’ argument [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+   90 |             printf("[01;35m[K%s[m[K " currentIDLexeme);
+      |                     [01;35m[K~^[m[K
+      |                      [01;35m[K|[m[K
+      |                      [01;35m[Kchar *[m[K
+make: *** [<builtin>: lex.o] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ a[Kmake
+[?2004lcc    -c -o lex.o lex.c
+Please Enter Filename: (automatic)
+a1.in
+
+begin begin int int a a 
+***
+'a' inserted at slot 300
+13
+***
+int int TEST	int	int	0	300
+VALUE RETURNEDint
+Error found on line 2
+Redefintion Error
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+Please Enter Filename: (automatic)
+a1.in
+
+begin begin TEST	begin	begin	0	400
+VALUE RETURNEDbegin
+Error found on line 1
+Redefintion Error
+
+make: *** [Makefile:8: main] Error 1
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+Please Enter Filename: (automatic)
+a1.in
+
+make: *** [Makefile:8: main] Segmentation fault
+make: *** Deleting file 'main'
+[?2004h]0;narwine@DESKTOP-MIKB8M8: ~/COP4020_New_Project1[01;32mnarwine@DESKTOP-MIKB8M8[00m:[01;34m~/COP4020_New_Project1[00m$ make
+[?2004lcc    -c -o pars.o pars.c
+Please Enter Filename: (automatic)
+a1.in
+
+begin begin int int a a 
+***
+'a' inserted at slot 300
+13
+***
+make: *** [Makefile:8: main] Segmentation fault
+make: ***
