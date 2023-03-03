@@ -30,6 +30,7 @@ int lexan(FILE *fp);
 int lookup(char* arr); 
 extern int lineNo;
 extern char* currentIDLexeme;
+extern int isIntMatch;
 
 typedef struct{
     char* charValue;

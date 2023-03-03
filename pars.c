@@ -3,6 +3,7 @@
 
 int lookAhead = 0;
 int iValue = 12;
+int isIntMatch = 0;
 
 void error(int t){
     printf("Error found on line %d\n", lineNo);
@@ -95,16 +96,14 @@ void expression(){
 
 int newLookup(char* arr){
     int i = 12;
-    printf("\n->NEWLOOKUP VAL %d\n" , myTable[i].type);
+        if(myTable[i].type != NOT_FOUND)
+            printf("\nVal at slot %d = %s\n", i, myTable[i].charValue);
         while(myTable[i].type != NOT_FOUND){
-            printf("TEST\t%s\t", myTable[i].charValue);
-            printf("%s\t" , arr);
-            printf("%d\t", strcmp(arr, myTable[i].charValue));
-            printf("%d\n" , myTable[i].type);
+            
             if(strcmp(arr, myTable[i].charValue) == 0){
-                printf("VALUE RETURNED%s\n", myTable[i].charValue);
                 return 1;
             }
+            i++;
             // printf("%d\n", myTable[i].type);
         }
     // printf("TEST2\t%s\t", myTable[i].charValue);
@@ -114,31 +113,33 @@ int newLookup(char* arr){
 }
 
 void intMatch(){
-    // printf("FINAL %d\n", newLookup("int"));
     while(lookAhead == INT_VAL){
-        
-        // printf("\nCIDLEX-T = %s\n", currentIDLexeme);
+        isIntMatch = 1;
         match(INT_VAL);
+        
         while(lookAhead != SEMICOLON){
-            // printf("%d ", lookAhead);
+            printf("%d ", lookAhead);
             // printf("\nCIDLEX = %s\n", currentIDLexeme);
             // if(newLookup(currentIDLexeme) != 1){
             //     error(REDEF);
             // }
             match(ID);
-            // printf("LOOK2 = %d\n" ,lookAhead);
+            printf("LOOK2 = %d\n" ,lookAhead);
             // printf("\nBefore Comma: %d\n" , lookAhead);
             // printf("%d", COMMA);
             while(lookAhead == COMMA){
                 match(COMMA);
-                // printf("\nCIDLEX2 = %s\n", currentIDLexeme);
+                printf("\nCIDLEX2 = %s\n", currentIDLexeme);
                 // if(newLookup(currentIDLexeme) != 1){
                 //     error(REDEF);
                 // }
                 match(ID);
             }
         }
+        
         // printf("BEFORE SEMI %d\n", lookAhead);
+        
+        isIntMatch = 0;
         match(SEMICOLON);
         // printf("TEST");
     }
@@ -147,6 +148,7 @@ void intMatch(){
 void assignStmt(){
     // printf("TEST%d\t" , lookAhead);
     if(lookAhead == INT_VAL){
+        
         // printf("TEST %s", currentIDLexeme);
         intMatch();
     }

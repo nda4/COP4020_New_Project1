@@ -27,6 +27,7 @@ void error(int t);
 extern int lookAhead;
 extern int lineNo;
 extern int iValue;
+extern int isIntMatch;
 extern FILE *fp;
 // extern char* currentIDLexeme;
 

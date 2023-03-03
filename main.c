@@ -42,11 +42,14 @@ int main()
     myTable[11].type = COMMA;
     myTable[12].type = NOT_FOUND;
 
-    // for(int i = 0; i < 13; i++){
-    //     myTable[i].charValue = preDefinitions[i];
-    //     printf("%s\n" , myTable[i].charValue);
-    //     printf("%d\n" , myTable[i].type);
-    // }
+    printf("\n**********\nPrelim Values: \n");
+    for(int i = 0; i < 13; i++){
+        myTable[i].charValue = preDefinitions[i];
+        printf("Slot %d\t", i);
+        printf("%s\t" , myTable[i].charValue);
+        printf("%d\n" , myTable[i].type);
+    }
+    printf("END Prelim Values\n**********\n\n");
 
     // printf("TEST1\t%d", myTable[10].type);
     
