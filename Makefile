@@ -1,5 +1,5 @@
 CXX = gcc
-CXXFLAGS = -g -Wall -s -static
+CXXFLAGS = -g -Wall -s -static -Wno-error
 
 OBJECTS = pars.o lex.o
 

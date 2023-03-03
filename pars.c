@@ -4,6 +4,9 @@
 int lookAhead = 0;
 int iValue = 12;
 int isIntMatch = 0;
+char* op1;
+char* op2;
+char opcode[MAX];
 
 void error(int t){
     printf("Error found on line %d\n", lineNo);
@@ -63,8 +66,9 @@ void match(int t){
 
 void factor(){
     // printf("%d\t", lookAhead);
-    if(lookAhead == ID)
+    if(lookAhead == ID){
         match(ID);
+    }
     else if(lookAhead == NUM)
         match(NUM);
     else if(lookAhead == OPENQ){
@@ -85,19 +89,33 @@ void term(){
     }
 }
 
+void write(){
+    printf("\n\tr0 = %s\n", op1);
+    printf("\n\tr1 = %s\n", op2);
+    printf("\n\tr0 = %s + %s\n", op1, op2);
+    printf("\n\t%s = r0\n\n", opcode);
+}
+
 void expression(){
     // printf("%d\t", lookAhead);
+    // printf("PREPRE TEST = %s\n\n", currentIDLexeme);
+    op1 = strdup(currentIDLexeme);
+    // printf("&\nTEST = %s\n&", op1);
     term();
     while(lookAhead == PLUS || lookAhead == MINUS){
         match(lookAhead);
+        // printf("PRETEST = %s", currentIDLexeme);
+        op2 = strdup(currentIDLexeme);
+        // printf("&\nTEST2 = %s\n&", op2);
         term();
+        write(op1, op2, opcode);
     }
 }
 
 int newLookup(char* arr){
     int i = 12;
         if(myTable[i].type != NOT_FOUND)
-            printf("\nVal at slot %d = %s\n", i, myTable[i].charValue);
+            // printf("\nVal at slot %d = %s\n", i, myTable[i].charValue);
         while(myTable[i].type != NOT_FOUND){
             
             if(strcmp(arr, myTable[i].charValue) == 0){
@@ -118,18 +136,18 @@ void intMatch(){
         match(INT_VAL);
         
         while(lookAhead != SEMICOLON){
-            printf("%d ", lookAhead);
+            // printf("%d ", lookAhead);
             // printf("\nCIDLEX = %s\n", currentIDLexeme);
             // if(newLookup(currentIDLexeme) != 1){
             //     error(REDEF);
             // }
             match(ID);
-            printf("LOOK2 = %d\n" ,lookAhead);
+            // printf("LOOK2 = %d\n" ,lookAhead);
             // printf("\nBefore Comma: %d\n" , lookAhead);
             // printf("%d", COMMA);
             while(lookAhead == COMMA){
                 match(COMMA);
-                printf("\nCIDLEX2 = %s\n", currentIDLexeme);
+                // printf("\nCIDLEX2 = %s\n", currentIDLexeme);
                 // if(newLookup(currentIDLexeme) != 1){
                 //     error(REDEF);
                 // }
@@ -152,8 +170,13 @@ void assignStmt(){
         // printf("TEST %s", currentIDLexeme);
         intMatch();
     }
+    // printf("MEDIUMRARE STEAK IS BEST CO/OKED A LITTLE = %s\n", currentIDLexeme);
+    for(int i = 0; i < MAX; i++){
+        opcode[i] = currentIDLexeme[i];
+    }
+    // printf("Test-1 = %s\n", opcode);
     match(ID);
-    // printf("%d\t", lookAhead);
+    // printf("%d\t", lookAhead*;
     if(lookAhead != EQUALS){
         error(EQUALS);
     }

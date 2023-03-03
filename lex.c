@@ -62,6 +62,7 @@ int lexan(FILE *fp){
                 nextChar = fgetc(fp);
             }while(isdigit(nextChar));
             numLexeme[numLexemeID] = '\0';
+            currentIDLexeme = strdup(numLexeme);
             ungetc(nextChar, fp); 
             return NUM;
         }
@@ -71,7 +72,7 @@ int lexan(FILE *fp){
             do{
                 idLexeme[idLexemeID] = nextChar;
                 idLexemeID++;
-                printf("%c", nextChar);
+                // printf("%c", nextChar);
                 nextChar = fgetc(fp);
                 if(nextChar == '_' && uSwitch != 1)
                     uSwitch = 1;
@@ -87,7 +88,7 @@ int lexan(FILE *fp){
             idLexeme[idLexemeID] = '\0';
             // printf("%s ", idLexeme);
             currentIDLexeme = ("%s", idLexeme);
-            printf("%s " , currentIDLexeme);
+            // printf("%s " , currentIDLexeme);
             
             if(isIntMatch == 1){
                 if(newLookup(currentIDLexeme) != 0){
@@ -121,20 +122,20 @@ int lookup(char* arr){
     myTable[i].charValue = strdup(arr);
     myTable[i].type = ID;
     myTable[i+1].type = NOT_FOUND;
-    printf("\n***\n'%s' inserted at slot ", arr);
-    printf("%d\n", i);
-    printf("%s\n", myTable[i].charValue);
-    printf("%d==", i+1);
-    printf("%d\n", myTable[i+1].type);
-    printf("Val at slot %d = %s\n***\n", i, myTable[i].charValue);
+    // printf("\n***\n'%s' inserted at slot ", arr);
+    // printf("%d\n", i);
+    // printf("%s\n", myTable[i].charValue);
+    // printf("%d==", i+1);
+    // printf("%d\n", myTable[i+1].type);
+    // printf("Val at slot %d = %s\n***\n", i, myTable[i].charValue);
 
-    printf("\n\n**********\nPost Insert Values: \n");
-    for(int i = 0; i < 13; i++){
-        printf("Slot %d\t", i);
-        printf("%s\t" , myTable[i].charValue);
-        printf("%d\n" , myTable[i].type);
-    }
-    printf("END Post Insert Values\n**********\n\n");
+    // printf("\n\n**********\nPost Insert Values: \n");
+    // for(int i = 0; i < 13; i++){
+    //     printf("Slot %d\t", i);
+    //     printf("%s\t" , myTable[i].charValue);
+    //     printf("%d\n" , myTable[i].type);
+    // }
+    // printf("END Post Insert Values\n**********\n\n");
 
     
 

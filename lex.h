@@ -32,6 +32,7 @@ extern int lineNo;
 extern char* currentIDLexeme;
 extern int isIntMatch;
 
+
 typedef struct{
     char* charValue;
     int type;
