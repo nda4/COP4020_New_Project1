@@ -4,6 +4,9 @@
 
 #define nameLength 30
 char* currentIDLexeme;
+int firstDef = 0;
+
+char operand;
 
 
 int lexan(FILE *fp){
@@ -14,6 +17,7 @@ int lexan(FILE *fp){
 
     int idLexemeID;
     char nextChar;
+    
 
     //  for(int i = 0; i < 11; i++){
     //     // myTable[i].charValue = preDefinitions[i];
@@ -33,14 +37,22 @@ int lexan(FILE *fp){
         else if(nextChar == ';'){
             return SEMICOLON;
         }
-        else if(nextChar == '+')
-            return PLUS;
-        else if(nextChar == '-')
-            return MINUS;
-        else if(nextChar == '*')
-            return TIMES;
-        else if(nextChar == '/')
-            return DIVIDE;
+        else if(nextChar == '+'){
+            operand = '+';      
+            return PLUS; 
+    }
+        else if(nextChar == '-'){
+            operand = '-';    
+            return MINUS;   
+    }
+        else if(nextChar == '*'){
+            operand = '*';
+            return TIMES;       
+    }
+        else if(nextChar == '/'){
+            operand = '/'; 
+            return DIVIDE;      
+    }
         else if(nextChar == '(')
             return OPENQ;
         else if(nextChar == ')')
@@ -62,7 +74,12 @@ int lexan(FILE *fp){
                 nextChar = fgetc(fp);
             }while(isdigit(nextChar));
             numLexeme[numLexemeID] = '\0';
-            currentIDLexeme = strdup(numLexeme);
+            // printf("TEST: %ld\n", sizeof(numLexeme));
+            for(int i = 0; i < 10; i++){
+                currentIDLexeme[i] = numLexeme[i];
+                // currentIDLexeme[i+1] = '\0';
+            }
+            // printf("%s\n\n", currentIDLexeme);
             ungetc(nextChar, fp); 
             return NUM;
         }
@@ -91,12 +108,13 @@ int lexan(FILE *fp){
             // printf("%s " , currentIDLexeme);
             
             if(isIntMatch == 1){
-                if(newLookup(currentIDLexeme) != 0){
-                // printf("CHECK HERE%s\n",  currentIDLexeme);
-                error(REDEF);
-            }}
+                if(newLookup(currentIDLexeme) != 0)
+                    error(REDEF);
+                firstDef = 1;
+            }
 
             type = lookup(idLexeme);
+            firstDef = 0;
             // printf("\t");
             return type;
         }
@@ -119,6 +137,8 @@ int lookup(char* arr){
         }
         i++;
     }while(myTable[i].type != NOT_FOUND);
+    if(firstDef == 0)
+        error(UNDEF);
     myTable[i].charValue = strdup(arr);
     myTable[i].type = ID;
     myTable[i+1].type = NOT_FOUND;

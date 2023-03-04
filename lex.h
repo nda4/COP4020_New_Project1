@@ -31,7 +31,9 @@ int lookup(char* arr);
 extern int lineNo;
 extern char* currentIDLexeme;
 extern int isIntMatch;
+extern int firstDef;
 
+extern char operand;
 
 typedef struct{
     char* charValue;

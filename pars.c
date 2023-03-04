@@ -4,8 +4,9 @@
 int lookAhead = 0;
 int iValue = 12;
 int isIntMatch = 0;
-char* op1;
-char* op2;
+
+char op1[MAX];
+char op2[MAX];
 char opcode[MAX];
 
 void error(int t){
@@ -49,6 +50,9 @@ void error(int t){
     else if(t == REDEF){
         printf("Redefintion Error\n");
     }
+    else if(t == UNDEF){
+        printf("Undefined Value Error\n");
+    }
     printf("\n");
     exit(1);
 }
@@ -90,22 +94,22 @@ void term(){
 }
 
 void write(){
-    printf("\n\tr0 = %s\n", op1);
-    printf("\n\tr1 = %s\n", op2);
-    printf("\n\tr0 = %s + %s\n", op1, op2);
-    printf("\n\t%s = r0\n\n", opcode);
+    printf("\n\tR0 = %s\n", op1);
+    printf("\n\tR1 = %s\n", op2);
+    printf("\n\tR0 = R0 %c R1\n", operand);
+    printf("\n\t%s = R0\n\n", opcode);
 }
 
 void expression(){
     // printf("%d\t", lookAhead);
     // printf("PREPRE TEST = %s\n\n", currentIDLexeme);
-    op1 = strdup(currentIDLexeme);
+    strcpy(op1, currentIDLexeme);
     // printf("&\nTEST = %s\n&", op1);
     term();
     while(lookAhead == PLUS || lookAhead == MINUS){
         match(lookAhead);
         // printf("PRETEST = %s", currentIDLexeme);
-        op2 = strdup(currentIDLexeme);
+        strcpy(op2, currentIDLexeme);
         // printf("&\nTEST2 = %s\n&", op2);
         term();
         write(op1, op2, opcode);
@@ -165,6 +169,7 @@ void intMatch(){
 
 void assignStmt(){
     // printf("TEST%d\t" , lookAhead);
+    
     if(lookAhead == INT_VAL){
         
         // printf("TEST %s", currentIDLexeme);

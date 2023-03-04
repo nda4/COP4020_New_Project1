@@ -18,3 +18,4 @@
 #define INT_VAL 10
 #define REDEF -5
 #define COMMA 360
+#define UNDEF -6

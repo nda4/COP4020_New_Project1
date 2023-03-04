@@ -31,6 +31,10 @@ extern int isIntMatch;
 extern FILE *fp;
 // extern char* currentIDLexeme;
 
+extern char opcode[MAX];
+extern char op1[MAX];
+extern char op2[MAX];
+extern char operand;
 
 
 #endif
