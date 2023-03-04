@@ -58,7 +58,6 @@ void error(int t){
 }
 
 void match(int t){
-    // printf("%d->%d\n", lookAhead, t);
     if(lookAhead == t){
         lookAhead = lexan(fp);
     }
@@ -69,7 +68,6 @@ void match(int t){
 }
 
 void factor(){
-    // printf("%d\t", lookAhead);
     if(lookAhead == ID){
         match(ID);
     }
@@ -85,7 +83,6 @@ void factor(){
 }
 
 void term(){
-    // printf("%d\t", lookAhead);
     factor();
     while(lookAhead == TIMES || lookAhead == DIVIDE){
         match(lookAhead);
@@ -101,16 +98,11 @@ void write(){
 }
 
 void expression(){
-    // printf("%d\t", lookAhead);
-    // printf("PREPRE TEST = %s\n\n", currentIDLexeme);
     strcpy(op1, currentIDLexeme);
-    // printf("&\nTEST = %s\n&", op1);
     term();
     while(lookAhead == PLUS || lookAhead == MINUS){
         match(lookAhead);
-        // printf("PRETEST = %s", currentIDLexeme);
         strcpy(op2, currentIDLexeme);
-        // printf("&\nTEST2 = %s\n&", op2);
         term();
         write(op1, op2, opcode);
     }
@@ -118,19 +110,13 @@ void expression(){
 
 int newLookup(char* arr){
     int i = 12;
-        if(myTable[i].type != NOT_FOUND)
-            // printf("\nVal at slot %d = %s\n", i, myTable[i].charValue);
         while(myTable[i].type != NOT_FOUND){
             
             if(strcmp(arr, myTable[i].charValue) == 0){
                 return 1;
             }
             i++;
-            // printf("%d\n", myTable[i].type);
         }
-    // printf("TEST2\t%s\t", myTable[i].charValue);
-    // printf("%s\t" , arr);
-    // printf("%d\n", strcmp(arr, myTable[i].charValue));
     return 0;
 }
 
@@ -140,48 +126,28 @@ void intMatch(){
         match(INT_VAL);
         
         while(lookAhead != SEMICOLON){
-            // printf("%d ", lookAhead);
-            // printf("\nCIDLEX = %s\n", currentIDLexeme);
-            // if(newLookup(currentIDLexeme) != 1){
-            //     error(REDEF);
-            // }
             match(ID);
-            // printf("LOOK2 = %d\n" ,lookAhead);
-            // printf("\nBefore Comma: %d\n" , lookAhead);
-            // printf("%d", COMMA);
             while(lookAhead == COMMA){
                 match(COMMA);
-                // printf("\nCIDLEX2 = %s\n", currentIDLexeme);
-                // if(newLookup(currentIDLexeme) != 1){
-                //     error(REDEF);
-                // }
                 match(ID);
             }
         }
         
-        // printf("BEFORE SEMI %d\n", lookAhead);
         
         isIntMatch = 0;
         match(SEMICOLON);
-        // printf("TEST");
     }
 }
 
 void assignStmt(){
-    // printf("TEST%d\t" , lookAhead);
     
     if(lookAhead == INT_VAL){
-        
-        // printf("TEST %s", currentIDLexeme);
         intMatch();
     }
-    // printf("MEDIUMRARE STEAK IS BEST CO/OKED A LITTLE = %s\n", currentIDLexeme);
     for(int i = 0; i < MAX; i++){
         opcode[i] = currentIDLexeme[i];
     }
-    // printf("Test-1 = %s\n", opcode);
     match(ID);
-    // printf("%d\t", lookAhead*;
     if(lookAhead != EQUALS){
         error(EQUALS);
     }

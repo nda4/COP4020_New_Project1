@@ -18,13 +18,6 @@ int lexan(FILE *fp){
     int idLexemeID;
     char nextChar;
     
-
-    //  for(int i = 0; i < 11; i++){
-    //     // myTable[i].charValue = preDefinitions[i];
-    //     printf("%s\n" , myTable[i].charValue);
-    //     printf("%d\n" , myTable[i].type);
-    // }
-    
     do{
         int uSwitch = 0;
         numLexemeID = 0;
@@ -74,12 +67,9 @@ int lexan(FILE *fp){
                 nextChar = fgetc(fp);
             }while(isdigit(nextChar));
             numLexeme[numLexemeID] = '\0';
-            // printf("TEST: %ld\n", sizeof(numLexeme));
             for(int i = 0; i < 10; i++){
                 currentIDLexeme[i] = numLexeme[i];
-                // currentIDLexeme[i+1] = '\0';
             }
-            // printf("%s\n\n", currentIDLexeme);
             ungetc(nextChar, fp); 
             return NUM;
         }
@@ -89,7 +79,6 @@ int lexan(FILE *fp){
             do{
                 idLexeme[idLexemeID] = nextChar;
                 idLexemeID++;
-                // printf("%c", nextChar);
                 nextChar = fgetc(fp);
                 if(nextChar == '_' && uSwitch != 1)
                     uSwitch = 1;
@@ -103,9 +92,7 @@ int lexan(FILE *fp){
                 error(ENDUNDER);
             }
             idLexeme[idLexemeID] = '\0';
-            // printf("%s ", idLexeme);
             currentIDLexeme = ("%s", idLexeme);
-            // printf("%s " , currentIDLexeme);
             
             if(isIntMatch == 1){
                 if(newLookup(currentIDLexeme) != 0)
@@ -115,7 +102,6 @@ int lexan(FILE *fp){
 
             type = lookup(idLexeme);
             firstDef = 0;
-            // printf("\t");
             return type;
         }
         else if (nextChar == EOF){
@@ -126,13 +112,9 @@ int lexan(FILE *fp){
 }
 
 int lookup(char* arr){
-    // printf("BEEG TEST = %s\n" , myTable[6].charValue);
     int i = 0;
     do{
         if(strcmp(arr, myTable[i].charValue) == 0){
-            // printf("Ival = %d\n", i);
-            // printf("%s\n" , myTable[i].charValue);
-            // printf("%d\n" , myTable[i].type);
             return myTable[i].type;
         }
         i++;
@@ -142,20 +124,6 @@ int lookup(char* arr){
     myTable[i].charValue = strdup(arr);
     myTable[i].type = ID;
     myTable[i+1].type = NOT_FOUND;
-    // printf("\n***\n'%s' inserted at slot ", arr);
-    // printf("%d\n", i);
-    // printf("%s\n", myTable[i].charValue);
-    // printf("%d==", i+1);
-    // printf("%d\n", myTable[i+1].type);
-    // printf("Val at slot %d = %s\n***\n", i, myTable[i].charValue);
-
-    // printf("\n\n**********\nPost Insert Values: \n");
-    // for(int i = 0; i < 13; i++){
-    //     printf("Slot %d\t", i);
-    //     printf("%s\t" , myTable[i].charValue);
-    //     printf("%d\n" , myTable[i].type);
-    // }
-    // printf("END Post Insert Values\n**********\n\n");
 
     
 

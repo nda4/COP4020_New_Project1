@@ -1,7 +1,7 @@
 //Noah Daniel Arwine
 //COP4020_Spring_2023
-//Project 1
-//Lexical Analyser and Parser
+//Project 2
+//Lexical Analyser and Parser + Int Checker
 
 
 #include "pars.h"
@@ -25,8 +25,6 @@ int main()
     char* preDefinitions[12] = {"begin", "end", ";", "+", "-", "=", "*", "/", "(", ")", "int", ","};
     for(int i = 0; i < 13; i++){
         myTable[i].charValue = preDefinitions[i];
-        // printf("%s\n" , myTable[i].charValue);
-        // printf("%d\n" , myTable[i].type);
     }
     myTable[0].type = BEGIN;
     myTable[1].type = END;
@@ -42,16 +40,9 @@ int main()
     myTable[11].type = COMMA;
     myTable[12].type = NOT_FOUND;
 
-    // printf("\n**********\nPrelim Values: \n");
     for(int i = 0; i < 13; i++){
         myTable[i].charValue = preDefinitions[i];
-        // printf("Slot %d\t", i);
-        // printf("%s\t" , myTable[i].charValue);
-        // printf("%d\n" , myTable[i].type);
     }
-    // printf("END Prelim Values\n**********\n\n");
-
-    // printf("TEST1\t%d", myTable[10].type);
     
     lineNo = 1; 
     char filename[20];
@@ -79,8 +70,7 @@ int main()
         free(entryTable);
         error(BEGIN);
     }
-
-    // match(BEGIN);
+    
     printf("PROGRAM LEGAL: SUCCESS\n\n");
 
 
